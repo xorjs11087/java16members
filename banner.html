@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배너 등록</title>
+</head>
+<body>
+    <form>
+
+        <div class="information">
+
+            <h1 id="first">① 기본 정보를 입력해주세요.</h1>
+            <label for="division">구분</label>
+            <select id="division" value="">
+                <option value="">선택</option>
+                <option value="">팀모집</option>
+                <option value="">팀원모집</option>
+                <option value="">스태프모집</option>
+                <option value="">감독모집</option>
+            </select>
+
+            <label for="link">이동할 원본 글 링크</label>
+            <input type="url" id="link" name="link" placeholder="원본 글 링크를 입력해주세요.">
+
+        </div>
+
+        <div class="registration">
+            <h1 id="second">② 배너 이미지를 등록해주세요.</h1>
+            <label for="title">제목</label>
+            <input type="text" id="title" name="title" placeholder="제목을 입력해주세요.">
+            <input type="file" id="banner" name="banner" accept="image/*" onchange="previewImage(event)">
+            <div id='previewText'>미리보기</div>
+            <img id='preview' src="" width='200px' height='200px'>
+        </div>
+
+        <button type="button" onclick="">취소</button>
+		<button type="button" onclick="">등록</button>
+    </form>
+
+<!--
+previewImage(event) 함수는 파일을 선택하면 실행되는 함수.
+파일을 선택하면 FileReader 객체를 생성.
+FileReader 객체의 onload 이벤트 핸들러를 등록.
+onload == 객체가 제대로 로드되었을 때 발생하는 이벤트. 
+onload 이벤트는 파일 읽기 작업이 성공적으로 완료되었을 때 발생.
+미리보기 이미지가 표시될 HTML img 태그를 가져옴.(id="preview")
+FileReader 객체의 result 속성에 이미지 파일의 URL이 포함되어 있음.
+즉, 이미지 요소의 src 속성에 설정하여 이미지를 표시할 수 있음.
+미리보기 이미지를 보여주고, "미리보기" 텍스트를 숨김. 
+FileReader 객체의 readAsDataURL() 메서드를 사용하여 파일을 읽음.
+event.target.files[0]은 파일 선택 태그에 선택된 파일 객체를 나타냄.
+선택된 첫 번째 파일을 데이터 URL로 읽음.
+이 작업이 완료되면 onload 이벤트가 발생하고 이벤트 핸들러 함수 호출.
+-->
+    <script>
+        function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                var output = document.getElementById('preview');
+                output.src = reader.result;
+                output.style.display = 'block'; 
+                document.getElementById('previewText').style.display = 'none';
+            };
+            
+        reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>
