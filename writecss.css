@@ -37,11 +37,10 @@ button {
 select {
 	width: 150px;
 	height: 30px;
-	margin: 20px 20px 20px 0px;
+	margin: 30px 20px 20px 0px;
 }
 
 #a {
-
 	width: 830px;
 	height: 15px;
 	background-color: beige;
@@ -57,7 +56,7 @@ select {
 }
 
 #addr {
-	width: 800px;
+	width: 98%;
 	height: 35px;
 	margin-top: 5px;
 }
@@ -79,7 +78,10 @@ select {
 .select-area label {
 	width: 20%;
 	position: absolute;
-	/* display: block;*/
 	margin: 0px;
 	padding: 0px;
+}
+
+#date{
+	margin:10px 0px 0px 0px;
 }
