@@ -1,0 +1,135 @@
+# java16members
+
+/*html 파일입니다*/
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/Fp-bannerCss.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+<ul class="">
+	
+	<h3>① 기본 정보를 입력해주세요.</h3>
+	
+	<li id="1">구분</li>
+	
+	<select class="select" >
+		<option value="">팀원모집/경기결과 홍보</option>
+		<option value=""></option>
+		<option value=""></option>			
+	</select>
+	
+	
+	<li >이동할 원본 글 링크</li>
+	<input type="text" style="margin-top:10px; width:600px; height:28px; ">
+	<h3 class="bannerimage">② 배너 이미지를 등록해주세요.</h3>
+	<li style="margin-bottom:10px;">제목</li>
+	<div class="divoutoffile" style="width:610px;" 최대 1개,>
+	<input type="file" class="file" placeholder="최대 1개,파일당 10mb까지 등록할 수 있습니다." ><!--파일추가기능넣기-->
+	</div>
+	<div placeholder="미리보기"style="margin-top:20px;" class="submain"></div>
+		
+</ul>
+
+<div class="buttondiv">
+<button class="button">취소</button>
+<button class="button">등록</button>
+  </div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+/*css파일 입니다.*/
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+@charset "UTF-8";
+
+	.main{ /*가장바깥의가장큰div*/
+		 width:900px;
+	    height:700px;
+		background-color: white;
+		border:1px solid #000;
+		position: absolute;
+		
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);/*왼쪽,위쪽*/
+	    padding:10px;
+		
+	}
+	.submain{ /*미리보기가들어갈두번째로큰 div*/
+		width:820px;
+		height:300px;
+		background-color: white;
+		border:1px solid #000;
+		position: absolute;
+		
+		left: 50%;
+		top: 67%;
+		transform: translate(-50%, -50%);
+		
+	}
+	#1{/*구분 li의 마진*/
+		margin:0;
+		padding:0;
+	}
+	.select{ /*팀원모집/경기결과홍보들어갈select*/
+		margin-top:10px;
+		margin-bottom:10px;
+		width:450px;
+	}
+	#selectin{ /*팀원모집/경기결과홍보들어갈select*/
+		padding:0px;
+		margin:0px;
+
+	}	
+	select{  /*전체적인 마진과 패딩*/
+		width:150px;
+		height:30px;
+		padding:0;
+		margin:0;
+	}
+	
+	ul>li{ /*li버튼들동그라미없애기*/
+		list-style:none;
+	}
+	.divoutoffile{ /*파일선택하는버튼을감싸고있는div*/
+		height:30px;
+		width:400px;
+		background-color: white;
+		border:1px solid #000;
+		text-align:end;
+		padding-right: 0;
+	}
+	.file{ /*파일선택하는 input file태그*/
+		margin-top:3px;
+		
+	}
+	.buttondiv{/*버튼을감싸고있는보이지않는 div*/
+		position: absolute;
+		left:80%;
+		top:93%;
+	}
+	
+	.button{/*취소,등록버튼*/
+		
+		width:50px; height:30px;
+		float:right;
+		margin-right:30px;
+		background-color: #162856;
+		color: white;
+		
+	}
+	

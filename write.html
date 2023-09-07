@@ -7,152 +7,99 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 	<title>Insert title here</title>
-	<style>
-		.a1 {
-			width: 0 auto;
-			height: 0 auto;
-			background-color: white;
-			position: absolute;
-
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			/*왼쪽,위쪽*/
-			padding: 10px;
-			text-align: center;
-		}
-
-		.a3 {
-			width: 870px;
-			height: 450px;
-			background-color: white;
-			margin: 10px;
-			/*주축 방향 정렬
-		justify-content: flex-end;
-		
-		교차축 방향 정렬 
-		align-items: flex-end;*/
-		}
-
-		button {
-			width: 50px;
-			height: 30px;
-			float: right;
-			margin-right: 30px;
-			background-color: navy;
-			color: white;
-		}
-
-		select {
-			width: 150px;
-			height: 30px;
-			margin: 20px 20px 20px 0px;
-		}
-
-		#a {
-
-			width: 830px;
-			height: 15px;
-			background-color: beige;
-			padding: 20px;
-			margin: 10px 0px 10px 0px;
-		}
-
-		#a2 {
-			width: 870px;
-			height: 350px;
-			background-color: white;
-			border: 1px solid #000;
-		}
-
-		#addr {
-			width: 500px;
-			height: 35px;
-		}
-
-		#intro {
-			margin: 0px 0px 15px 0px;
-		}
-	</style>
-	<script>
-		$("form").submit(function () {
-			var formData = new formData(this);
-			var area1 = formData.get('data');
-
-			window.location.href = "read.html?data=${data}";
-		});
-	</script>
-</head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../project1/writecss.css" </head>
 
 <body>
 	<form>
 		<div class="a1">
 			<br>
-			<h1 id="intro">① 팀의 기본 정보를 입력해주세요.</h1>
-			<label for="area">지역</label>
-			<select id="area" value="">
-				<option>선택</option>
-				<option>서울</option>
-				<option>경기</option>
-				<option>인천</option>
-				<option>강원</option>
-				<option>충청</option>
-				<option>경북</option>
-				<option>경남</option>
-				<option>부산</option>
-				<option>대구</option>
-				<option>전북</option>
-				<option>전남</option>
-				<option>광주</option>
-			</select>
+			<h3 id="intro">① 팀의 기본 정보를 입력해주세요.</h3>
+			<div>
+				<div class="select-area">
+					<label for="area">지역</label>
+					<select id="area">
+						<option>선택</option>
+						<option>서울</option>
+						<option>경기</option>
+						<option>인천</option>
+						<option>강원</option>
+						<option>충청</option>
+						<option>경북</option>
+						<option>경남</option>
+						<option>부산</option>
+						<option>대구</option>
+						<option>전북</option>
+						<option>전남</option>
+						<option>광주</option>
+					</select>
+				</div>
 
-			<label for="play">종목</label>
-			<select id="play" value="">
-				<option value="">선택</option>
-				<option value="">축구</option>
-				<option value="">야구</option>
-				<option value="">농구</option>
-				<option value="">배드민턴</option>
-				<option value="">기타</option>
-			</select>
-			<label for="division">모집구분</label>
-			<select id="division" value="">
-				<option value="">선택</option>
-				<option value="">팀모집</option>
-				<option value="">팀원모집</option>
-				<option value="">스태프모집</option>
-				<option value="">감독모집</option>
-			</select>
+				<div class="select-area">
+					<label for="play">종목</label>
+					<select id="play">
+						<option>선택</option>
+						<option>축구</option>
+						<option>야구</option>
+						<option>농구</option>
+						<option>배드민턴</option>
+						<option>기타</option>
+					</select>
+				</div>
+
+				<div class="select-area">
+					<label for="division">모집구분</label>
+					<select id="division">
+						<option>선택</option>
+						<option>팀모집</option>
+						<option>팀원모집</option>
+						<option>스태프모집</option>
+						<option>감독모집</option>
+					</select>
+				</div>
+
+				<div class="select-area">
+					<label for="number">모집인원</label>
+					<select id="number">
+						<option></option>
+					</select>
+				</div>
+
+				<div class="select-area">
+					<label for="etc1">경력</label>
+					<select id="etc1">
+						<option>선택</option>
+						<option>초보</option>
+						<option>중급자</option>
+						<option>고수</option>
+						<option>고인물</option>
+						<option>다이김</option>
+					</select>
+				</div>
+
+				<div class="select-area">
+					<label for="date">모집 마감일</label>
+					<br>
+					<input type="date" id="date" />
+				</div>
+			</div>
+			<div style="clear: both"></div>
 			<br>
-			<label for="number">모집인원</label>
-			<select id="number" value="">
-				<option value=""></option>
-			</select>
-
-			<label for="etc1">경력</label>
-			<select id="etc1" value="">
-				<option value="">선택</option>
-				<option value="">초보</option>
-				<option value="">중급자</option>
-				<option value="">고수</option>
-				<option value="">고인물</option>
-				<option value="">다이김</option>
-			</select>
-
-			<label for="date">모집 마감일</label> : <input type="date" id="date" />
-			<br>
-			<div id="sns">
+			<div id="sns" style="text-align: left;">
 				연락 가능한 SNS 주소
+				<br>
 				<input type="text" id="addr" placeholder="">
 			</div>
-			<h1>② 팀에 대해 소개해주세요.</h1>
+
+
+			<h3 id="intro2">② 팀에 대해 소개해주세요.</h3>
 
 			<div class="a3">
 				<input type="text" id="a" placeholder="제목(20자 이내)" />
 				<input type="text" id="a2" placeholder="팀에 대해 소개해주세요." />
 			</div>
 
-			<button type="button" onclick="">취소</button>
+			<button type="button" onclick="lacation.href=''">취소</button>
 			<button type="button" onclick="location.href='read.html'">등록</button>
 
 		</div>
