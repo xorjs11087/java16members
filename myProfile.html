@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정보 - 나의 프로필</title>
+</head>
+<body onload="loadUserNickname()">
+    <div class="nav">
+        <ul>
+            <li><a href="myInformation.html" onclick='showPage("myInformation")'>나의 정보</a></li>
+            <li><a href="myProfile.html" onclick='showPage("myProfile")'>나의 프로필</a></li>
+            <li><a href="myParticipation.html" onclick='showPage("myParticipation")'>참여 통계</a></li>
+        </ul>
+    </div>
+
+    <form id = "profileForm">
+        <label for = 'nickname'>닉네임</label>
+        <input type = 'text' id = 'nickname' name = 'nickname' readonly><br />
+
+        <label><input type="checkbox" name="event" value="soccer"> 축구</label>
+        <label><input type="checkbox" name="event" value="baseball"> 야구</label>
+        <label><input type="checkbox" name="event" value="basketball"> 농구</label>
+        <label><input type="checkbox" name="event" value="badminton"> 배드민턴</label>
+        <label><input type="checkbox" name="event" value="tennis"> 테니스</label>
+        <label><input type="checkbox" name="event" value="etc"> 기타</label>
+        <br/>
+
+        <label for='career'>종목 경력</label>
+        <select id='career' placeholder="초보~10년 이상"> 
+            <option value=''>선택</option>
+            <option value='처음'>처음</option>
+            <option value='1년 미만'>1년 미만</option>
+            <option value='1~2년'>1~2년</option>
+            <option value='2~3년'>2~3년</option>
+            <option value='3~5년'>3~5년</option>
+            <option value='5~10년'>5~10년</option>
+            <option value='10년 이상'>10년 이상</option>
+        </select><br/>
+        
+        <button onclick ='resetForm("profileForm") '>취소</button >
+        <button onclick ='submitForm(" profile Form ")'>등록</button>
+    </form>
+<script src="userInformation.js"></script>
+</body>
+</html>
