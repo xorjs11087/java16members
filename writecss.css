@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+.a1 {
+	width: 0 auto;
+	height: 0 auto;
+	background-color: white;
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/*왼쪽,위쪽*/
+	padding: 10px;
+}
+
+.a3 {
+	width: 870px;
+	height: 450px;
+	background-color: white;
+	margin: 10px;
+	/*주축 방향 정렬
+		justify-content: flex-end;
+		
+		교차축 방향 정렬 
+		align-items: flex-end;*/
+}
+
+button {
+	width: 50px;
+	height: 30px;
+	float: right;
+	margin-right: 30px;
+	background-color: navy;
+	color: white;
+}
+
+select {
+	width: 150px;
+	height: 30px;
+	margin: 20px 20px 20px 0px;
+}
+
+#a {
+
+	width: 830px;
+	height: 15px;
+	background-color: beige;
+	padding: 20px;
+	margin: 10px 0px 10px 0px;
+}
+
+#a2 {
+	width: 870px;
+	height: 365px;
+	background-color: white;
+	border: 1px solid #000;
+}
+
+#addr {
+	width: 800px;
+	height: 35px;
+	margin-top: 5px;
+}
+
+#intro {
+	margin: 20px 0px 15px 0px;
+}
+
+#intro2 {
+	margin-bottom: 0px;
+}
+
+.select-area {
+	float: left;
+	text-align: left;
+	width: 50%;
+}
+
+.select-area label {
+	width: 20%;
+	position: absolute;
+	/* display: block;*/
+	margin: 0px;
+	padding: 0px;
+}
