@@ -1,0 +1,78 @@
+.nav a {
+    display: inline-block; /* 인라인 블록 요소로 설정 */
+    margin: 20px; /* 마진 설정 */
+    padding: 10px; /* 패딩 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    background-color: #022952; /* 배경색 설정 */
+    color: rgb(255, 255, 255); /* 글자색을 흰색으로 설정 */
+    width: 200px; 
+    height: 50px;
+    line-height :50px; 
+    text-align:center;
+}
+
+.nav {
+   position:absolute;
+   top :200px;
+   left :10px;
+}
+
+.label-group {
+    position: absolute; 
+    top: 200px; 
+    left: 400px; 
+}
+
+.label-group label {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background-color: #022952; 
+    color: white;
+    
+     /* 박스 크기 설정 */
+     width :200px;
+     height :50px;
+
+     /* 내용 가운데 정렬 */
+     line-height :50px;
+     text-align:center;
+
+}
+
+.input-group {
+    position: absolute; /* 절대 위치 지정 */
+    top: 200px; /* 상단에서 300px 떨어진 위치에 배치 (label-group와 동일) */
+    left: 700px; /* 왼쪽에서 300px 떨어진 위치에 배치 */
+}
+
+.input-group input, .input-group select {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    width: 500px; /* 박스의 가로 길이 설정 */
+    height: 50px;
+    font-size: 20px;
+    line-height :50px;
+    text-align:center;
+}
+
+.cancel-button {
+    position: absolute; /* 절대 위치 지정 */
+    top: 700px; /* 상단에서 500px 떨어진 위치에 배치 */
+    left: 1100px; /* 왼쪽에서 400px 떨어진 위치에 배치 */
+    background-color: #022952; /* 버튼 배경색 설정 */
+    color: rgb(255, 255, 255); /* 글자색 설정 */
+    width: 100px;
+    height: 50px;
+}
+
+.submit-button {
+    position: absolute;
+    top: 700px;
+    left: 1200px;
+    background-color: #022952; /* 버튼 배경색 설정 */
+    color: white;
+    width: 100px;
+    height: 50px;
+}
