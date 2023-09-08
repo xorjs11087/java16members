@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .a1 {
-	width: 0 auto;
-	height: 0 auto;
+	width: 900px;
+	height: 874px;
 	background-color: white;
 	position: absolute;
 
@@ -15,48 +15,44 @@
 
 .a3 {
 	width: 870px;
-	height: 450px;
+	height: 400px;
 	background-color: white;
-	margin: 10px;
-	/*주축 방향 정렬
-		justify-content: flex-end;
-		
-		교차축 방향 정렬 
-		align-items: flex-end;*/
+	margin: 10px 0px;
 }
 
 button {
-	width: 50px;
+	width: 70px;
 	height: 30px;
 	float: right;
 	margin-right: 30px;
-	background-color: navy;
+	background-color: #162856;
 	color: white;
 }
 
 select {
-	width: 150px;
+	width: 185px;
 	height: 30px;
 	margin: 30px 20px 20px 0px;
+	font-size: 15px;;
 }
 
 #a {
-	width: 830px;
+	width: 95%;
 	height: 15px;
 	background-color: beige;
-	padding: 20px;
-	margin: 10px 0px 10px 0px;
+	padding: 10px;
+	margin: 10px 0px;
 }
 
 #a2 {
-	width: 870px;
-	height: 365px;
+	width: 97%;
+	height: 320px;
 	background-color: white;
 	border: 1px solid #000;
 }
 
 #addr {
-	width: 98%;
+	width: 94%;
 	height: 35px;
 	margin-top: 5px;
 }
@@ -82,6 +78,20 @@ select {
 	padding: 0px;
 }
 
-#date{
-	margin:10px 0px 0px 0px;
+#date {
+	margin-top: 10px;
+}
+
+#sns {
+	text-align: left;
+	width: 100%;
+}
+
+#btndiv {
+	height: 50px;
+	position: absolute;
+	left: 75%;
+}
+.select-area label{
+	font-size: 20px;
 }
