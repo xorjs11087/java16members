@@ -27,23 +27,5 @@ function resetForm(formId) {
 
 //등록 버튼 클릭하면 정보 수정되도록.
 function submitForm(formId) {
-    event.preventDefault();
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/server-endpoint", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-
-    // 현재 폼의 데이터 가져오기
-    var formData = new FormData(document.getElementById(formId));
-
-    // 폼 데이터를 JSON 형식으로 변환
-    var jsonObject = {};
-    for (const [key, value] of formData.entries()) {
-        jsonObject[key] = value;
-    }
-
-    // 서버에 JSON 데이터 전송
-    xhr.send(JSON.stringify(jsonObject));
-
     alert("정보가 수정되었습니다.");
 }
