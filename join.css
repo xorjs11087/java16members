@@ -1,0 +1,117 @@
+/* #container{
+  width: 1000px;
+  height: 800px;
+  border: solid 1px red;
+} */
+
+/* 중앙으로 정렬 */
+body {
+  display: flex;
+  justify-content: center;
+  margin: 200px;
+}
+
+/* 회원가입 박스 가이드 라인 */
+#container {
+  width: 830px;
+  height: 600px;
+  /* border: solid 1px black; */
+}
+/* 회원가입 전체 객체 왼쪽 정렬 */
+.box_up,
+.box_down,
+.box_down_name {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 하단박스(이름, 생년월일 등) 간격 조정 */
+.box_down_name {
+  margin: 100px 0 0 0;
+}
+
+/* 좌측 라벨 스타일 (아이디, 이름 등) */
+.label {
+  border: none;
+  margin: 0 0 10px 10px;
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #162856;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  color: white;
+}
+
+/* 사용자 입력칸 */
+.user {
+  border: solid 1px #E7E6E6;
+  width: 600px;
+  height: 40px;
+  box-sizing: border-box;
+  margin: 0 0 0 10px;
+}
+/* 입력칸 플레이스 홀더 들여쓰기  */
+::placeholder {
+  text-indent: 3px;
+}
+
+/* 생년월일 입력칸 폰트 변경 */
+#userBirth{
+  color: #737575;
+  font-Family : '맑은고딕';
+  font-size: 14px;
+}
+
+/* 활동지역 선택칸 스타일 */
+#area{
+  color: black;
+  width: 600px;
+  height: 40px;
+  margin: 0 0 0 10px;
+  border: solid 1px #E7E6E6;
+
+
+}
+
+/* 중복확인, 인증 버튼 스타일 */
+.duple {
+  border: none;
+  background: #162856;
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin: 0 0 0 10px;
+}
+
+/* 회원가입 버튼 스타일 */
+#join {
+  border: none;
+  background: #162856;
+  color: white;
+  width: 150px;
+  height: 50px;
+  margin: 0 0 0 60px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+/* 취소 버튼 스타일 */
+#cancel{
+  border: none;
+  background: #E7E6E6;
+  color: black;
+  width: 150px;
+  height: 50px;
+  margin: 0 0 0 60px;
+  font-size: 1.3em;  
+}
+/* 취소, 가입 버튼 우측 정렬&우측 여백 조정 */
+.cancelJoin{
+  display: flex;
+  justify-content: center;
+  width: 830px;
+  margin: 100px 20px 0 0;
+}
+
