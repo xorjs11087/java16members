@@ -10,24 +10,25 @@
 <title>Sportic:-지금 당장 시작해!</title>
 <style>
 	   body{
-		   width: 2000px;
-		   height: 2250px;
+		 
+		  width:1200px;
 		   margin: 0  auto;
 	   }
 	   
 	   
-	   header{ text-align: center ; height:350px; background:white; overflow:hidden;  font-family: 'Nanum Pen Script', cursive; font-size:150px; color: #162856;}
+	   header{ text-align: center ; height:210px; background:white; overflow:hidden; font-family: 'Nanum Pen Script', cursive; font-size:90px; color: #162856;
+	      position: relative;}
 	  nav{
-		  height:75px; background-color: white; font-family: "나눔 고딕";
+		  height:75px; background-color: white;  font-family:"나눔 고딕"; border-color:floralwhite; border-style:groove; border-radius: 5px;
 	  }
-	  section{float: left; height:1650px; width: 1440px; background: white; font-family: "나눔 고딕";}
-	   aside{font-size:15px;float:right; height:1650px; width:560px; background:white; font-family: "나눔 고딕";  
+	  section{float: left; height:990px; width: 864px; background: white;  font-family: "나눔 고딕"; }
+	   aside{font-size:20px;float:right; height:990px; width:336px; background:white; font-family: "나눔 고딕"; 
        }
 	  
 
-	   footer{height:225px; width: 2000px; margin:0 auto;  text-align:center; font-family: "나눔 고딕"; font-size:30px; }
+	   footer{height:135px; width: 1200px; margin:0 auto;  text-align:center; font-family: "나눔 고딕";;  font-size:20px }
 	   table{
-		   height:352.5px; width:352.5px; border-radius: 20px; border-color:lightgrey; border-style:groove;
+		   height:168px; width:168px; border-radius: 20px; border-color:lightgrey; border-style:groove;
 		   flex:1; box-sizing: border-box;  
            display:inline-block;  align-content:center; list-style: none;
            font-family: "나눔 고딕";
@@ -41,42 +42,103 @@
 		   font-size: 15px;
 	   }
 	    select{
-		   width:300px;
-		   height:50px;
+		   width:180px;
+		   height:30px;
 		   border-radius: 20px;
-		   font-size: 15px;
+		   font-size: 12px;
 		   text-align: center;
 		   text-align-last: center;
 		   margin: 0 auto;
-		   margin-right: 30px;
+		   margin-right: 20px;
            transform: translate(5%,0);
-           font-family: "나눔 고딕";
+           font-family:"나눔 고딕";
 	   }
 	   p{
 		   text-align: center;
 		   font-size: 15px;
 		   
 	   }
-     
+	  
 
+.atop > h2{
+    font-size: 20px;
+    color: #162856;
+    margin-bottom: 20px;
+    
+}
+h1{
+	font-family: 'Nanum Pen Script', cursive; font-size:90px; 
+	position: absolute;
+}
 .banner-wrap1, .banner-wrap2, .banner-wrap3, .banner-wrap4{
 	position: relative;
 	
 }
-h1{
+h2{
 	position: absolute;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50% );
     color: white;
-    font-size: 17px;
-    font-style: oblique;
+    font-size: 12px;
+    font-family:"나눔 고딕";
     overflow:hidden;
 }
 .search_wrapper {
-	
-	width:560px;
-	height:200px;
+	width:336px;
+	height:180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button{
+    width: 90px; height: 30px; 
+    margin: 0 auto;
+    color: white; background-color:  #162856;
+    font-size:4px;
+    font-family:"나눔 고딕";
+}
+label{
+	margin-right: 120px;
+}
+
+#atop{
+		   height:250px; width:336px; border-radius: 20px; border-color:lightgrey; border-style:groove;
+		   flex:1; box-sizing: border-box;  
+           display:inline-block;  align-content:center; list-style: none;
+           font-family: "나눔 고딕";
+	   }
+    #profile{
+		 height:112px;
+		 width:112px;
+		 float:left;
+		 border-radius: 50%;
+		 border-color: grey;
+		 text-align: left;
+		
+	 }
+	 #infobutton{
+		  width:240px;
+		  height:40px;
+		  text-align: center;
+		  font-size: 10px;
+	 }
+	  #logout{
+		  width:240px;
+		  height:40px;
+		  text-align: center;
+		 font-size: 10px;
+	 }
+	#idmention{
+		margin: 0 auto;
+		transform: translate(-150%, 0%);
+	}
+ .search_wrapper {
+	width:336px;
+	height:180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,7 +146,7 @@ h1{
 }
 
 #name {
-    width: 300px;
+    width: 180px;
     height: 20px;
 }  
 #submit_button{
@@ -99,64 +161,7 @@ h1{
 }
 
 
-#suggestion_box {
-    margin-top: 1px;
-    background: white;
-    padding: 0 10px;
-    border: 1px solid black;
-}
 
-#suggested_items{
-    height:200px;
-    width: 450px;
-    overflow: auto; /* 스크롤바 추가 */
-}
-
-/* 마우스 올리면 색 변화 */
-.item:hover{
-    color: #fff;
-    background-color: lightgreen;
-}
-button{
-    width: 120px; height: 50px; 
-    margin: 0 auto;
-    color: white; background-color:  #162856;
-    font-size:15px;
-   font-family: "나눔 고딕";
-}
-  #atop{
-		   height:352.5px; width:560px; border-radius: 20px; border-color:lightgrey; border-style:groove;
-		   flex:1; box-sizing: border-box;  
-           display:inline-block;  align-content:center; list-style: none;
-           font-family: "나눔 고딕";
-	   }
-    #profile{
-		 height:175px;
-		 width:175px;
-		
-		 border-radius: 50%;
-		 border-color: grey;
-		 
-		
-	 }
-	 #infobutton{
-		  width:300px;
-		  height:50px;
-		  text-align: center;
-		  font-size: 15px;
-	 }
-	  #logout{
-		  width:300px;
-		  height:50px;
-		  text-align: center;
-		 font-size: 15px;
-	 }
-	 #idmention{
-		  font-size: 20px;
-		 font-family: "나눔 고딕";
-		  text-align: center;
-		 
-	 }
 	 
 </style>
 
@@ -165,17 +170,12 @@ button{
 <body>
 	
 	
-  
-	      
-   
-         
-		  
-			   
 				  
 			
 				   
 				  
-             <header id="header">함께 즐기는 스포츠, Sportic: 
+             <header>	
+                 함께 즐기는 스포츠, Sportic:
 		  </header>
 	        <nav>
 				 
@@ -247,6 +247,15 @@ button{
 					
 				</table>
 				 <table>
+					 
+				</table>
+				 <table>
+					
+				</table>
+				 <table>
+					
+				</table>
+				 <table>
 					
 				</table> 
 				 <table>
@@ -261,14 +270,32 @@ button{
 				 <table>
 					
 				</table>
+				
 				 <table>
-					
 				</table>
-				 <table>
-					
+				
+				 <table>	
 				</table>
+				
 				 <table>
-					
+				</table>
+				
+				 <table>
+				</table>
+				
+				 <table>
+				</table>
+				
+				 <table>
+				</table>
+				
+				 <table>
+				</table>
+				
+				 <table>
+				</table>
+				
+				 <table>
 				</table>
 				  </div>
 		  </section>
@@ -312,31 +339,31 @@ button{
 				 <div class="images">
 				  <div class="banner-wrap1">
 					   <img src="../image/1.png"/ class="image1">
-						 <h1 class="">강원시장배 여자풋살대회<br/>
+						 <h2 class="">강원시장배 여자풋살대회<br/>
 							       일시: 2025년 3월 26일<br/>
 							       장소: 춘천 플레이그라운드 실내 풋살장
-						 </h1>
+						 </h2>
 				   </div>
 				    <div class="banner-wrap2">
 					   <img src="../image/2.png"/ class="image2">
-						 <h1 class="">서울시 사회체육인 농구대회<br/>
+						 <h2 class="">서울시 사회체육인 농구대회<br/>
 							       일시: 2024년 7월 13일<br/>
 							       장소: 서울특별시 동대문구 장안동 415-10 글로벌펠리스 2층(어반바스켓볼)
-						 </h1>
+						 </h2>
 				   </div>
 				    <div class="banner-wrap3">
 					   <img src="../image/3.png"/ class="image3">
-						 <h1 class="">전국 사회인 야구대회<br/>
+						 <h2 class="">전국 사회인 야구대회<br/>
 							       일시: 2027년 9월 8일<br/>
 							       장소: 서울종합운동장 야구장
-						 </h1>
+						 </h2>
 				   </div>
 				    <div class="banner-wrap4">
 					   <img src="../image/4.png"/ class="image4">
-						 <h1 class="">부산 사회인 발리볼 대회<br/>
+						 <h2 class="">부산 사회인 발리볼 대회<br/>
 							       일시: 2025년 1월 26일<br/>
 							       장소: 부산 사직 실내 체육관
-						 </h1>
+						 </h2>
 				   </div>
 				   
 				   </div>
@@ -350,7 +377,56 @@ button{
    <footer>Contact
 team.sportic.official@gmail.com
 Copyright sportic. All rights reserved</footer>
-    <script src="slide.js"></script>  
-	
+  
+	<script>
+let curPos= 0; // 현재 보고 있는 이미지의 인덱스 번호!
+let position = 0; // 현재 .images 의 위치값!
+const IMAGE_WIDTH = 336; // 한번 움직일 때 이동해야 할 거리!
+
+// 요소 선택
+const prevBtn = document.querySelector(".prev")
+const nextBtn = document.querySelector(".next")
+const images = document.querySelector(".images")
+
+function prev(){
+    if(curPos > 0){
+    nextBtn.removeAttribute("disabled") /* disabled 속성 제거*/
+    position += IMAGE_WIDTH /* position 값 증가 */
+    
+    images.style.transform = `translateX(${position}px)` /* images 스타일 transform, x축 변경*/
+    curPos -= 1; /* curPos 값 감소*/
+    }
+    if(curPos == 0){ /* 이미지 index값 0 되면 prev 못하게 */
+        prevBtn.setAttribute("disabled", 'true')
+    }
+ }
+function next(){ 
+    if(curPos < 3){
+        prevBtn.removeAttribute("disabled")
+        position -= IMAGE_WIDTH
+        /*
+            트랜스폼(변형)의 네가지 속성값(함수)
+            - scale() : 확대 또는 축소
+            - translate() : 위치 이동
+            - rotate() : 회전시키기
+            - skew() : 요소 비틀기
+        */
+        images.style.transform = `translateX(${position}px)`
+        curPos += 1;  
+    }
+    if(curPos == 3){
+        // 뒤로 못 가게 하기
+        nextBtn.setAttribute("disabled", 'true') // 못 누르는 버튼이 됨
+    }
+}
+// 초기 랜더링 시 최초 호출 함수의 관습적 이름
+function init(){
+    // 앞으로 가기는 처음부터 못누르게!
+    prevBtn.setAttribute("disabled", 'true')
+    prevBtn.addEventListener("click", prev)
+    nextBtn.addEventListener("click", next)
+  }
+    init();
+</script>	
 </body>
 </html>

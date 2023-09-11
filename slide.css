@@ -1,13 +1,13 @@
 html,body{ margin:0;}
-#container{ width: 560px; margin: 0 auto;}
+#container{ width: 336px; margin: 0 auto;}
 
-.poster{height: 700px; width: 100%; overflow: hidden;} /* overflow 되면 숨긴다*/
+.poster{height: 400px; width: 100%; overflow: hidden;} /* overflow 되면 숨긴다*/
 .images{ 
-    display: flex; height: 700px; width: 560px;
+    display: flex; height: 400px; width: 336px;
     transition-property: transform; /* transform 속성에대해, js코드에 의해 transform 스타일 추가된다*/
     transition-duration: 1s; /* transition 지속시간 */
 }
-.image1, .image2, .image3, .image4{width: 560px; height: 700px;}
+.image1, .image2, .image3, .image4{width: 336px; height: 400px;}
 
 
 button:disabled{ /* disabled 된 버튼 */
