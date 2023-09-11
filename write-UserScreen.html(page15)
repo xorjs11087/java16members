@@ -1,0 +1,126 @@
+java16members
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/Page15_Screen.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+
+
+
+<body>
+
+	
+		<input type="text" placeholder="서울시 야구단 용병모집 (2명)" class="top">
+	
+	
+	<div class="main">
+		
+		<div class="invisible">
+			
+				<div class="indiv">
+					
+					<p>지역</p>
+				    
+				   
+					<p >서울좋아</p>
+					</div>
+					
+				
+				
+				
+				<div class="indiv">
+					<p>종목</p>
+					
+				 	 
+					<p class="secondp">야구</p>
+					</div>
+			
+			   
+					
+					
+				
+				
+				<div class="indiv">
+					<p>모집구분</p>
+					
+					
+					<p class="secondp">용병모집</p>
+					</div>
+				
+				  
+				
+				<div class="indiv">
+					<p>모집인원</p>
+					
+					
+					<p class="secondp">2명</p>
+					</div>
+				
+				   
+				
+				<div class="indiv">
+					<p>경력</p>
+					
+					
+					<p class="secondp">초보</p>
+					</div>
+					
+					
+				
+				
+				<div class="indiv">
+					<p>모집마감</p>
+					
+					<p class="secondp">2023-12-31</p>
+					</div>
+				
+				
+				<div class="indiv">
+					<p>SNS</p>
+					<p>https:...</p>
+					</div>
+					
+		
+				<div class="buttondiv">
+				<button class="button1">보관하기</button><button class="button2">참가신청현황</button>
+				</div>
+				
+		</div> <!-- indiv=지역~참가신청을 담고있는 투명 div-->
+	
+	
+	<hr style="margin-left:30px; margin-right:30px;" />
+		
+	
+	<input type="text" placeholder="팀 소개글 입니다." class="input1">
+	
+	<hr style="margin-left:30px; margin-right:30px;"/>
+	
+		
+	<input type="text" placeholder="댓글 댓글" class="input2">
+	
+	
+	
+		<div>
+		<input type="text" placeholder="댓글을 작성해 보세요." class="input3">
+		<input type="button" value="등록"class="lastbutton">
+		</div>
+	
+	
+	
+	
+	</div> <!--ㅡmain div-->
+	
+	<!--긴 p태그들밑으로 내리는 법-->
+
+
+
+
+
+
+</body>
+</html>
