@@ -38,7 +38,7 @@
 
 <div class="buttondiv">
 <button class="button">취소</button>
-<button class="button">등록</button>
+<button class="button" onclick="location.href='Page10_Login.html';">등록</button>
   </div>
 
 </div>
