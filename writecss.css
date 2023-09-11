@@ -1,97 +1,167 @@
-@charset "UTF-8";
+/* 바디 중앙정렬, 폰트 설정 */
+body {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  font-family: 'NanumGothic';
 
-.a1 {
-	width: 900px;
-	height: 874px;
-	background-color: white;
-	position: absolute;
-
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	/*왼쪽,위쪽*/
-	padding: 10px;
 }
 
-.a3 {
-	width: 870px;
-	height: 400px;
-	background-color: white;
-	margin: 10px 0px;
+/* 전체 박스 가이드라인  */
+.container {
+  width: 960px;
+  height: 1000px;
+  border: solid 1px white;
 }
 
-button {
-	width: 70px;
-	height: 30px;
-	float: right;
-	margin-right: 30px;
-	background-color: #162856;
-	color: white;
+/* 기본정보 입력 박스(상단) */
+.box_up {
+  border: solid 1px white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
 }
 
-select {
-	width: 185px;
-	height: 30px;
-	margin: 30px 20px 20px 0px;
-	font-size: 15px;;
+/* 기본정보 라벨 */
+.label,
+.snsLabel {
+  margin: 0 0 0 80px;
+  font-size: 1em;
 }
 
-#a {
-	width: 95%;
-	height: 15px;
-	background-color: beige;
-	padding: 10px;
-	margin: 10px 0px;
-}
-
-#a2 {
-	width: 97%;
-	height: 320px;
-	background-color: white;
-	border: 1px solid #000;
-}
-
-#addr {
-	width: 94%;
-	height: 35px;
-	margin-top: 5px;
-}
-
-#intro {
-	margin: 20px 0px 15px 0px;
-}
-
-#intro2 {
-	margin-bottom: 0px;
-}
-
-.select-area {
-	float: left;
-	text-align: left;
-	width: 50%;
-}
-
-.select-area label {
-	width: 20%;
-	position: absolute;
-	margin: 0px;
-	padding: 0px;
-}
-
+/* 기본정보 입력칸 */
+#area,
+#play,
+#division,
+#number,
+#etc1,
 #date {
-	margin-top: 10px;
+  color: black;
+  width: 300px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 10px 80px;
 }
 
-#sns {
-	text-align: left;
-	width: 100%;
+/* sns 입력칸 */
+#addr {
+  color: black;
+  width: 680px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 10px 80px;
 }
 
-#btndiv {
-	height: 50px;
-	position: absolute;
-	left: 75%;
+/* 입력칸 플레이스 홀더 들여쓰기  */
+::placeholder {
+  text-indent: 3px;
 }
-.select-area label{
-	font-size: 20px;
+
+#intro,
+#intro2 {
+  margin: 10px 0 20px 100px;
+  position: relative;
+  /* 추가: 상위 요소의 위치를 기준으로 설정합니다. */
+}
+
+/* 원문자① */
+#intro::before {
+  content: "1";
+  /* 원문자를 콘텐츠로 설정 */
+  display: inline-block;
+  width: 30px;
+  /* 원의 너비 조절 */
+  height: 30px;
+  /* 원의 높이 조절 */
+  border-radius: 50%;
+  /* 원 모양으로 만듭니다. */
+  background-color: #162856;
+  /* 배경 색상 설정 */
+  color: white;
+  /* 텍스트 색상을 흰색으로 설정합니다. */
+  text-align: center;
+  line-height: 30px;
+  /* 텍스트를 원의 가운데에 정렬합니다. */
+  position: absolute;
+  left: -40px;
+  /* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
+  top: -2px;
+}
+
+/* 원문자② */
+#intro2::before {
+  content: "2";
+  /* 원문자를 콘텐츠로 설정 */
+  display: inline-block;
+  width: 30px;
+  /* 원의 너비 조절 */
+  height: 30px;
+  /* 원의 높이 조절 */
+  border-radius: 50%;
+  /* 원 모양으로 만듭니다. */
+  background-color: #162856;
+  /* 배경 색상 설정 */
+  color: white;
+  /* 텍스트 색상을 흰색으로 설정합니다. */
+  text-align: center;
+  line-height: 30px;
+  /* 텍스트를 원의 가운데에 정렬합니다. */
+  position: absolute;
+  left: -40px;
+  /* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
+  top: -2;
+}
+
+/* 제목 입력칸 */
+#a1 {
+  width: 690px;
+  height: 20px;
+  padding: 10px;
+  margin: 5px 0 0 80px;
+}
+
+/* 글쓰기 입력칸 */
+#a2 {
+  width: 690px;
+  height: 320px;
+  background-color: white;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0 0 80px;
+}
+
+/* 등록 버튼 스타일 */
+#register {
+  border: none;
+  background: #162856;
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin: 0 0 0 60px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* 취소 버튼 스타일 */
+#cancel {
+  border: none;
+  background: #E7E6E6;
+  color: black;
+  width: 100px;
+  height: 40px;
+  margin: 0 0 0 60px;
+  font-size: 1em;
+}
+
+/* 취소, 등록 정렬 */
+.cancelRegister {
+  display: flex;
+  justify-content: center;
+  width: 830px;
+  margin: 50px 0 0 0px;
 }
