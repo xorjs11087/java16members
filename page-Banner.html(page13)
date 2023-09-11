@@ -1,0 +1,46 @@
+# java16members
+
+/*html 파일입니다*/
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/Fp-bannerCss.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+<ul class="">
+	
+	<h3>① 기본 정보를 입력해주세요.</h3>
+	
+	<li id="1">구분</li>
+	
+	<select class="select" >
+		<option value="">팀원모집/경기결과 홍보</option>
+		<option value=""></option>
+		<option value=""></option>			
+	</select>
+	
+	
+	<li >이동할 원본 글 링크</li>
+	<input type="text" style="margin-top:10px; width:600px; height:28px; ">
+	<h3 class="bannerimage">② 배너 이미지를 등록해주세요.</h3>
+	<li style="margin-bottom:10px;">제목</li>
+	<div class="divoutoffile" style="width:610px;" 최대 1개,>
+	<input type="file" class="file" placeholder="최대 1개,파일당 10mb까지 등록할 수 있습니다." ><!--파일추가기능넣기-->
+	</div>
+	<div placeholder="미리보기"style="margin-top:20px;" class="submain"></div>
+		
+</ul>
+
+<div class="buttondiv">
+<button class="button">취소</button>
+<button class="button" onclick="location.href='Page10_Login.html';">등록</button>
+  </div>
+
+</div>
+</body>
+</html>
