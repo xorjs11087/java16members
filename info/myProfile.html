@@ -6,19 +6,25 @@
     <title>사용자 정보 - 나의 프로필</title>
     <link rel="stylesheet" href="myProfile.css">
 </head>
+<!--body 부분에 userInformation.js 적용.-->
 <body onload="loadUserNickname()">
+    <!--네비게이션바. 해당 주소를 클릭하면, 나의 정보, 프로필 편집, 참여 통계 주소로 이동-->
     <div class="nav">
         <ul>
             <a href="myInformation.html" onclick='showPage("myInformation")'>나의 정보</a></li><br/>
             <a href="myProfile.html" onclick='showPage("myProfile")'>나의 프로필</a></li><br/>
-            <a href="myParticipation.html" onclick='showPage("myParticipation")'>참여 통계</a></li><br/>
+            <a href="record.html" onclick='showPage("record")'>참여 통계</a></li><br/>
         </ul>
     </div>
 
+    <!--사용자 정보 입력 폼-->
     <form id = "profileForm">
+        <!--닉네임 부분 라벨과 속성-->
+        <!--닉네임 부분에 readonly 는 수정이 불가하도록 해주는 속성.-->
         <label for = 'nickname'>닉네임</label>
         <input type = 'text' id = 'nickname' name = 'nickname' readonly><br />
 
+        <!--경기 종목 선택 부분 속성-->
         <label><input type="checkbox" name="event" value="soccer"> 축구</label>
         <label><input type="checkbox" name="event" value="baseball"> 야구</label>
         <label><input type="checkbox" name="event" value="basketball"> 농구</label>
@@ -27,6 +33,7 @@
         <label><input type="checkbox" name="event" value="etc"> 기타</label>
         <br/>
 
+        <!--경기 종목 경력 부분 속성-->
         <label for='career'>종목 경력</label>
         <select id='career' placeholder="초보~10년 이상"> 
             <option value=''>선택</option>
@@ -39,6 +46,7 @@
             <option value='10년 이상'>10년 이상</option>
         </select><br/>
         
+        <!--최소, 등록 버튼-->
         <button onclick ='resetForm("profileForm") '>취소</button >
         <button onclick ='submitForm(" profile Form ")'>등록</button>
     </form>
