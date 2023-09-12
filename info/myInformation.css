@@ -67,7 +67,9 @@ body {
 /* 사용자 정보 입력란 그룹박스 */
 .form-group {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  top: 50%;
+  /* justify-content: space-between; */
   /* margin-bottom: 10px; */
 }
 
@@ -81,7 +83,7 @@ body {
   display: flex;
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
-  margin-bottom: 0 0 10px 0; /* 수정한 부분입니다 */
+  margin: 0 20px 10px 0; /* 수정한 부분입니다 */
   padding: 0;
 }
 
@@ -92,14 +94,16 @@ input[type="email"],
 select {
   width: 500px;
   height: 45px;
-  margin: 0 0 16px 0;
+  margin: 0 0 26px 0;
   padding: 0;
   border: 1px solid #ccc;
 }
 
 /* 버튼 스타일 */
 .button-group {
-  margin: 10px 0 0 500px;
+  position: relative;
+  top: 70%;
+  right: -65%;
 
 }
 
