@@ -6,10 +6,11 @@
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> -->
-	
+
 	<title>글쓰기</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="writecss.css"> </head>
+	<link rel="stylesheet" href="../write/writecss.css">
+</head>
 
 <body>
 	<form>
@@ -21,7 +22,7 @@
 					<label for="area" class="label">지역</label>
 					<br>
 					<select id="area">
-						<option>선택</option>
+						<option>-선택-</option>
 						<option>서울</option>
 						<option>경기</option>
 						<option>인천</option>
@@ -39,22 +40,22 @@
 
 				<div class="select-area">
 					<label for="play" class="label">종목</label>
-					<br>					
+					<br>
 					<select id="play">
-						<option>선택</option>
+						<option>-선택-</option>
 						<option>축구</option>
 						<option>야구</option>
 						<option>농구</option>
 						<option>배드민턴</option>
 						<option>기타</option>
-					</select>					
+					</select>
 				</div>
 
 				<div class="select-area">
 					<label for="division" class="label">모집구분</label>
 					<br>
 					<select id="division">
-						<option>선택</option>
+						<option>-선택-</option>
 						<option>팀모집</option>
 						<option>팀원모집</option>
 						<option>스태프모집</option>
@@ -66,7 +67,17 @@
 					<label for="number" class="label">모집인원</label>
 					<br>
 					<select id="number">
-						<option></option>
+						<option>-선택-</option>
+						<option>1명</option>
+						<option>2명</option>
+						<option>3명</option>
+						<option>4명</option>
+						<option>5명</option>
+						<option>6명</option>
+						<option>7명</option>
+						<option>8명</option>
+						<option>9명</option>
+						<option>10명 이상</option>
 					</select>
 				</div>
 
@@ -74,7 +85,7 @@
 					<label for="etc1" class="label">경력</label>
 					<br>
 					<select id="etc1">
-						<option>선택</option>
+						<option>-선택-</option>
 						<option>초보</option>
 						<option>중급자</option>
 						<option>고수</option>
@@ -91,7 +102,7 @@
 			</div>
 
 			<!-- <div style="clear: both"></div> -->
-			
+
 			<div id="sns">
 				<label for="sns" class="snsLabel"> 연락 가능한 SNS 주소</label>
 				<input type="text" id="addr" placeholder="https:// ">
@@ -106,9 +117,9 @@
 				<input type="text" id="a2" placeholder="팀에 대해 소개해주세요." />
 			</div>
 			<div class="cancelRegister">
-			<button id="cancel" type="button" onclick="lacation.href=''">취소</button>
-			<button id="register" type="button" onclick="location.href='read.html'">등록</button>
-		</div>
+				<button id="cancel" type="button" onclick="lacation.href=''">취소</button>
+				<button id="register" type="button" onclick="location.href='read.html'">등록</button>
+			</div>
 		</div>
 	</form>
 
