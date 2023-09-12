@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  font-family: 'NanumGothic';
+}
+
+/* 전체 박스 가이드라인  */
+.container {
+  width: 960px;
+  height: 1000px;
+  border: none;
+}
+
+.box_up {
+	height: 280px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+	align-items: flex-start;
+}
+
+#intro,
+#intro2{
+	font-size: 1.3em;
+	font-weight: bold;
+	position: relative;
+}
+
+ /* 원문자① */
+ #intro::before {
+	content: "1";
+	/* 원문자를 콘텐츠로 설정 */
+	display: inline-block;
+	width: 30px;
+	/* 원의 너비 조절 */
+	height: 30px;
+	/* 원의 높이 조절 */
+	border-radius: 50%;
+	/* 원 모양으로 만듭니다. */
+	background-color: #162856;
+	/* 배경 색상 설정 */
+	color: white;
+	/* 텍스트 색상을 흰색으로 설정합니다. */
+	text-align: center;
+	line-height: 30px;
+	/* 텍스트를 원의 가운데에 정렬합니다. */
+	position: absolute;
+	/* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
+	left: -20px;
+}
+
+ /* 원문자② */
+ #intro2::before {
+	content: "2";
+	/* 원문자를 콘텐츠로 설정 */
+	display: inline-block;
+	width: 30px;
+	/* 원의 너비 조절 */
+	height: 30px;
+	/* 원의 높이 조절 */
+	border-radius: 50%;
+	/* 원 모양으로 만듭니다. */
+	background-color: #162856;
+	/* 배경 색상 설정 */
+	color: white;
+	/* 텍스트 색상을 흰색으로 설정합니다. */
+	text-align: center;
+	line-height: 30px;
+	/* 텍스트를 원의 가운데에 정렬합니다. */
+	position: absolute;
+		/* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
+	left: -20px;
+}
+
+.label,
+.snsLabel,
+.title{
+	list-style-type: none;
+	font-size: 1em;
+	font-weight: bold;
+ }
+
+ .select{
+	width: 300px;
+  height: 36px;
+	margin: 10px 0 10px 0;
+	border: solid 1px #E7E6E6;
+ }
+
+ .sns{
+	width: 500px;
+  height: 30px;
+	margin: 10px 0 10px 0;
+	border: solid 1px #E7E6E6;
+ }
+
+
+ .box_down {
+	height: 600px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+	align-items: flex-start;
+}
+
+.divoutoffile{
+	width: 600px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid #000;
+	text-align: end;
+	margin: 10px 0 10px 0;
+	border: solid 1px #E7E6E6;
+	}
+.submain{
+	width: 600px;
+	height: 400px;
+	border: solid 1px #E7E6E6;
+}
+
+/* 등록 버튼 스타일 */
+#register {
+  border: none;
+  background: #162856;
+  color: white;
+  width: 100px;
+  height: 40px;
+  margin: 0 0 0 60px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* 취소 버튼 스타일 */
+#cancel {
+  border: none;
+  background: #E7E6E6;
+  color: black;
+  width: 100px;
+  height: 40px;
+  margin: 0 0 0 60px;
+  font-size: 1em;
+}
+
+/* 취소, 등록 정렬 */
+.cancelRegister {
+  display: flex;
+  justify-content: center;
+  width: 830px;
+  margin: 0;
+	padding: 0;
+}
+
