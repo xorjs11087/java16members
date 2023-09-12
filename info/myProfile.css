@@ -135,12 +135,13 @@ input[type="checkbox"]:checked {
   transform: translate(-50%, -50%);
 }
 
-#event {
+.checkbox-group {
   position: absolute;
   top: 50%; /* 위에서부터의 거리 */
-  left: 75%;
+  left: 70%; /* 왼쪽에서부터의 거리 */
   transform: translate(-50%, -50%);
 }
+
 
 #career {
   position: absolute;

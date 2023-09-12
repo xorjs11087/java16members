@@ -33,12 +33,14 @@
                 <div class="input-group">
                     <!--이름 부분에 readonly 는 수정이 불가하도록 해주는 속성.-->
                     <input type="text" id="nickname" name="nickname" readonly><br />
-                    <label><input type="checkbox" name="event" value="soccer"> 축구</label>
-                    <label><input type="checkbox" name="event" value="baseball"> 야구</label>
-                    <label><input type="checkbox" name="event" value="basketball"> 농구</label><br/>
-                    <label><input type="checkbox" name="event" value="badminton"> 배드민턴</label>
-                    <label><input type="checkbox" name="event" value="tennis"> 테니스</label>
-                    <label><input type="checkbox" name="event" value="etc"> 기타</label><br/>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="event" value="soccer"> 축구</label>
+                        <label><input type="checkbox" name="event" value="baseball"> 야구</label>
+                        <label><input type="checkbox" name="event" value="basketball"> 농구</label>
+                        <label><input type="checkbox" name="event" value="badminton"> 배드민턴</label>
+                        <label><input type="checkbox" name="event" value="tennis"> 테니스</label>
+                        <label><input type="checkbox" name="event" value="etc"> 기타</label>
+                    </div>
                     <select id='career' placeholder="초보~10년 이상">
                         <option value=''>선택</option>
                         <option value='처음'>처음</option>
