@@ -1,20 +1,30 @@
 	/* 가장 바깥 둘러싸는 큰 div*/
 	body {
+		width: 1200px;
 		display: flex;
 		justify-content: center;
-		margin: 100px;
+		margin: 0 200px;
 		font-family: 'NanumGothic';
 	}
-	
-
+/* 로고 */
+	#main-logo {
+		width: 15%;
+		height: 15%;
+		object-fit: contain;
+		position: relative;
+		top: 10px;
+		left: 150px;
+	}
 	/* 제목 */
 	.top {
 		width: 890px;
 		height: 40px;
 		padding: 0;
-		margin: 20px 0;
+		margin: 100px 0 10px 0;
+		font-size: 1em;
+		text-indent: 10px;
+		font-weight: bold;
 	}
-
 	.main{
 		width: 890px;
 		height: 1200px;
@@ -93,6 +103,10 @@
 		border: 2px solid white;
 		border-top: 2px solid black;
 		border-bottom: 2px solid black;
+		font-size: 1.3em;
+		font-family: 'NanumGothic';
+		
+		line-height:40px;
 	}
 
 	/*댓글 input박스*/
@@ -102,6 +116,7 @@
 		margin: 10px 30px 0 30px;
 		padding: 0;
 		border: solid 1px #E7E6E6;
+		font-size: 1.3em;
 	}
 
 
