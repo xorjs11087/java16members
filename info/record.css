@@ -1,16 +1,24 @@
+@charset "UTF-8";
+
 /* 바디 중앙정렬, 폰트 설정 */
 body {
-    display: flex;
+    
     justify-content: center;
     margin: 200px;
 }
 
 /* 전체 컨테이너 */
 .container {
-    width: 960px;
-    margin: 0 auto;
+    width: 1110px;
+     height:700px;
+    /*margin: 0 auto;*/
+    
     display: flex;
-    justify-content: space-between;
+    border: 1px solid#000;
+    position:absolute;
+    left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
 }
 
 /* 왼쪽 네비게이션 */
@@ -33,6 +41,7 @@ body {
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 1em;
+    margin-bottom:40px;
 }
 
 .nav-button a {
@@ -48,4 +57,129 @@ body {
     background-size: cover;
     background-position: center;
     margin-left: 40px;
+}
+
+/*참여횟수~경기결과 버튼을 감싸고 있는 보이지 않는 div*/
+.stat-div{
+   width:600px;
+   height:700px;
+   
+   
+   
+}
+
+/*참여횟수 버튼*/
+.joincount-button{
+   
+   position:absolute;
+   top:16%;
+   
+   display: block;
+    width: 130px;
+    height: 55px;
+    background-color: #162856;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom:50px;
+       
+}
+
+/*경기횟수 버튼*/
+.matchcount-button{
+   
+   
+   position:absolute;
+   top:49%;
+   
+   
+   display: block;
+    width: 130px;
+    height: 55px;
+    background-color: #162856;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom:50px;
+    }
+    
+    /*경기결과 버튼*/
+ .matchresult-button{
+   position:absolute;
+   top:79%;
+    
+    
+    
+   display: block;
+   width: 130px;
+    height: 55px;
+    background-color: #162856;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom:50px;
+}
+
+/*통계값 div 둘러싸고 있는 div*/
+
+.divout-of-statistic{
+    margin-top:30px;
+   
+}
+
+/*참여횟수 통계값 들어갈 div*/
+.joincount-div{
+   width:670px;
+   margin-left:5px;
+   margin-top:33px;
+   margin-right:24px;
+   margin-bottom:20px;
+   text-align: center;
+   border: 1px solid #000;
+   
+   
+}
+
+/*경기횟수 통계값 들어갈 div*/
+.matchcount-div{
+   width:670px;
+   margin-left:5px;
+   margin-right:24px;
+   margin-bottom:20px;
+   text-align: center;
+   border: 1px solid #000;
+   
+   
+}
+
+/*경기결과 통계값 들어갈 div*/
+.matchresult-div{
+   width:670px;
+   margin-left:5px;
+   margin-right:24px;
+   margin-bottom:20px;
+   text-align: center;
+   border: 1px solid #000;
+   
+   
+}
+p{
+   display:inline-block;
+   width:150px;
+   
+}
+.kileeimg{
+   margin:30px;
+   margin-left:40px;
+   height:300px;
+   width:150px;
 }

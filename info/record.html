@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="record.css">
 </head>
 <body>
-    <div class="container">
-        <!--네비게이션바. 해당 주소를 클릭하면, 나의 정보, 프로필 편집, 참여 통계 주소로 이동-->
-        <div class="nav">
+    <div class="container"> <!-- 가장바깥쪽둘러싼div-->
+        <div class="nav"> <!--네비게이션바 div. 해당 주소를 클릭하면, 나의 정보, 프로필 편집, 참여 통계 주소로 이동-->
             <div class="my-info-image"></div>
             <ul>
                 <button class="nav-button"><a href="myInformation.html">나의 정보</a></button>
@@ -17,5 +16,37 @@
                 <button class="nav-button"><a href="record.html">참여 통계</a></button>
             </ul>
         </div>
+        
+        <div class="stat-div" > <!--참여횟수~경기결과버튼둘러싸는 보이지 않는 div-->
+         <ul>
+            <button class="joincount-button">참여 횟수</button>
+            <button class="matchcount-button">경기 횟수</button>
+            <button class="matchresult-button">경기 결과</button>
+         </ul>
+      </div> 
+      
+            <div class="divoutofstatistic">
+         
+      <div class="joincount-div"> <!-- 참여횟수 통계값 들어갈 div-->
+         <p>축구</p> <p>10 회</p> <p>야구</p>  <p>1 회</p> <p>농구</p> <p>0 회</p> <p>탁구</p> <p>1 회</p>
+         <p>배드민턴</p> <p>10 회</p> <p>테니스</p> <p>1 회</p>  <p>족구</p> <p>0 회</p> <p>기타</p> <p>1 회</p>         
+      </div>
+      
+      <div class="matchcount-div"> <!-- 경기횟수 통계값 들어갈 div-->
+         <p>축구</p> <p>10회</p> <p>야구</p>  <p>1회</p> <p>농구</p> <p>0회</p> <p>탁구</p> <p>1회</p>
+         <p>배드민턴</p> <p>10회</p> <p>테니스</p> <p>1회</p>  <p>족구</p> <p>0회</p> <p>기타</p> <p>1회</p>         
+      </div>
+      
+      <div class="matchresult-div"> <!-- 경기결과 통계값 들어갈 div-->
+         <p>축구</p> <p>5승 1무 1패</p> <br>
+         <p>야구</p> <p>5승 1무 1패</p> <br> 
+         <p>그외</p> <p>3승 2무 2패</p>   
+         
+      </div>
+      
+            </div>
+      
+      
+   </div>
 </body>
 </html>
