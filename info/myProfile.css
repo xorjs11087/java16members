@@ -79,6 +79,27 @@ body {
     padding: 0;
 }
 
+.label-nickname {
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.label-event {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.label-career {
+    position: absolute;
+    left: 40%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+}
+
 /* 사용자정보 입력칸 박스 */
 input[type="text"],
 select {
