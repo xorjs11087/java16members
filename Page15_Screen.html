@@ -4,86 +4,89 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
-	<link rel="stylesheet" href="../write/Page15_Screen.css">
+	<link rel="stylesheet" href="../write/test15.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <script>
 	$(function () {
 		// 다이얼로그 띄우기
-		$("#button2").click(function () {
+		$(".button2").click(function () {
 			$("#applicant").css('display', 'block');
 		})
 	});
 </script>
 
 <body>
-	<!-- <input type="text" placeholder="서울시 야구단 용병모집 (2명)" class="top"> -->
-	<div class="top">서울시 야구단 용병모집 (2명)</div>
+	<div class="container">
+		<input type="text" placeholder="서울시 야구단 용병모집 (2명)" class="top">
+		<!-- <div class="top">서울시 야구단 용병모집 (2명)</div> -->
 
-	<div class="main">
+		<div class="main">
 
-		<div class="invisible">
+			<div class="invisible">
 
-			<div class="indiv">
-				<p>지역</p>
-				<p>서울좋아</p>
+				<div class="indiv">
+					<p>지역</p>
+					<p>서울좋아</p>
+				</div>
+
+				<div class="indiv">
+					<p>종목</p>
+					<p class="secondp">야구</p>
+				</div>
+
+				<div class="indiv">
+					<p>모집구분</p>
+					<p class="secondp">용병모집</p>
+				</div>
+
+				<div class="indiv">
+					<p>모집인원</p>
+					<p class="secondp">2명</p>
+				</div>
+
+				<div class="indiv">
+					<p>경력</p>
+					<p class="secondp">초보</p>
+				</div>
+
+				<div class="indiv">
+					<p>모집마감</p>
+					<p class="secondp">2023-9-13</p>
+				</div>
+
+				<div class="indiv">
+					<p>SNS</p>
+					<p>https:...</p>
+				</div>
+
+				<div class="buttondiv">
+					<button class="button1">보관하기</button><button class="button2">참가신청현황</button>
+				</div>
+
+				<!-- 참가신청현황 버튼 클릭 시 보이는 화면 -->
+				<div id="applicant" title="참여신청자">
+					<ol>
+						<li>이단비</li>
+						<li>김태건</li>
+						<li>송선호</li>
+					</ol>
+				</div>
+				<!-- 버튼을 클릭 시 신청자가 보이는 div -->
+			</div> <!-- indiv=지역~참가신청을 담고있는 투명 div-->
+
+			<!-- ***********팀 소개글입니다. ************** -->
+			<input type="text" placeholder="팀 소개글 입니다." class="input1">
+
+			<!-- ***********댓글창 입니다.************** -->
+			<input type="text" placeholder="댓글 댓글" class="input2">
+			<!-- **********댓글 작성창 입니다.*************** -->
+
+			<div class="input3Box">
+				<input type="text" placeholder="댓글을 작성해 보세요." class="input3">
+				<input type="button" value="등록" class="lastbutton">
 			</div>
-
-			<div class="indiv">
-				<p>종목</p>
-				<p class="secondp">야구</p>
-			</div>
-
-			<div class="indiv">
-				<p>모집구분</p>
-				<p class="secondp">용병모집</p>
-			</div>
-
-			<div class="indiv">
-				<p>모집인원</p>
-				<p class="secondp">2명</p>
-			</div>
-
-			<div class="indiv">
-				<p>경력</p>
-				<p class="secondp">초보</p>
-			</div>
-
-			<div class="indiv">
-				<p>모집마감</p>
-				<p class="secondp">2023-9-13</p>
-			</div>
-
-			<div class="indiv">
-				<p>SNS</p>
-				<p>https:...</p>
-			</div>
-
-			<div class="buttondiv">
-				<button class="button1">보관하기</button><button id="button2">참가신청현황</button>
-			</div>
-
-			<div id="applicant" title="참여신청자">
-				<ol>
-					<li>홍길동</li>
-					<li>이순신</li>
-					<li>송선호</li>
-				</ol>
-			</div>
-			<!-- 버튼을 클릭 시 신청자가 보이는 div -->
-		</div> <!-- indiv=지역~참가신청을 담고있는 투명 div-->
-		<hr />
-		<input type="text" placeholder="팀 소개글 입니다." class="input1">
-
-		<hr />
-
-		<input type="text" placeholder="댓글 댓글" class="input2">
-
-		<div>
-			<input type="text" placeholder="댓글을 작성해 보세요." class="input3">
-			<input type="button" value="등록" class="lastbutton">
 		</div>
-
 	</div>
 </body>
 
