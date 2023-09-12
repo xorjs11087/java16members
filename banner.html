@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배너등록</title>
+<link rel="stylesheet" href="banner.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+	<!-- 상단 기본정보 박스 -->
+	<ul class="box_up">	
+
+	<h3 id="intro">　기본 정보를 입력해주세요.</h3>
+		<!-- 구분 -->
+	<li class="label">구분</li>
+	<select class="select" >
+		<option value="">팀원모집/경기결과 홍보</option>
+		<option value=""></option>
+		<option value=""></option>			
+	</select>
+		<!-- 이동할 원본 글 링크 -->
+	<li class="snsLabel">이동할 원본 글 링크</li>
+	<input class="sns" type="text">
+
+</ul>
+
+<!-- 하단 배너이미지 등록 박스 -->
+	<ul class="box_down">
+	<h3 id="intro2">　배너 이미지를 등록해주세요.</h3>
+	<li class="title">제목</li>
+	<div class="divoutoffile" 최대 1개,>
+	<input type="file" class="file" placeholder="최대 1개,파일당 10mb까지 등록할 수 있습니다." >
+	<!--파일추가기능넣기-->
+	</div>
+	<div placeholder="미리보기" class="submain"></div>
+	</ul>
+
+	<div class="cancelRegister">
+		<button id="cancel" type="button" onclick="lacation.href=''">취소</button>
+		<button id="register" type="button" onclick="location.href='read.html'">등록</button>
+  </div>
+
+</div>
+</body>
+</html>
