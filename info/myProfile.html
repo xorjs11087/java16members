@@ -8,48 +8,55 @@
 </head>
 <!--body 부분에 userInformation.js 적용.-->
 <body onload="loadUserNickname()">
-    <!--네비게이션바. 해당 주소를 클릭하면, 나의 정보, 프로필 편집, 참여 통계 주소로 이동-->
-    <div class="nav">
-        <ul>
-            <a href="myInformation.html" onclick='showPage("myInformation")'>나의 정보</a></li><br/>
-            <a href="myProfile.html" onclick='showPage("myProfile")'>나의 프로필</a></li><br/>
-            <a href="record.html" onclick='showPage("record")'>참여 통계</a></li><br/>
-        </ul>
+    <div class="container">
+        <!--네비게이션바. 해당 주소를 클릭하면, 나의 정보, 프로필 편집, 참여 통계 주소로 이동-->
+        <div class="nav">
+            <div class="my-info-image"></div>
+            <ul>
+                <button class="nav-button" onclick='showPage("myInformation")'>나의 정보</button>
+                <button class="nav-button" onclick='showPage("myProfile")'>나의 프로필</button>
+                <button class="nav-button" onclick='showPage("record")'>참여 통계</button>
+            </ul>
+        </div>
+
+        <!--사용자 정보 입력 폼-->
+        <form id = "profileForm">
+            <div class="form-group">
+                <div class="label-group">
+                    <label class="label-box" for="nickname">닉네임</label><br />
+                    <label class="label-box" for="event">주요 종목</label><br />
+                    <label class="label-box" for='career'>종목 경력</label><br />
+                </div>
+
+                <div class="input-group">
+                    <!--이름 부분에 readonly 는 수정이 불가하도록 해주는 속성.-->
+                    <input type="text" id="nickname" name="nickname" readonly><br />
+                    <label><input type="checkbox" name="event" value="soccer"> 축구</label>
+                    <label><input type="checkbox" name="event" value="baseball"> 야구</label>
+                    <label><input type="checkbox" name="event" value="basketball"> 농구</label><br/>
+                    <label><input type="checkbox" name="event" value="badminton"> 배드민턴</label>
+                    <label><input type="checkbox" name="event" value="tennis"> 테니스</label>
+                    <label><input type="checkbox" name="event" value="etc"> 기타</label><br/>
+                    <select id='career' placeholder="초보~10년 이상">
+                        <option value=''>선택</option>
+                        <option value='처음'>처음</option>
+                        <option value='1년 미만'>1년 미만</option>
+                        <option value='1~2년'>1~2년</option>
+                        <option value='2~3년'>2~3년</option>
+                        <option value='3~5년'>3~5년</option>
+                        <option value='5~10년'>5~10년</option>
+                        <option value='10년 이상'>10년 이상</option>
+                    </select><br/>
+                </div>
+            </div>
+
+            <!--최소, 등록 버튼-->
+            <div class="button-group">
+                <button class="cancel-button" onclick='resetForm("infoForm")'>취소</button>
+                <button class="submit-button" onclick='submitForm("infoForm")'>등록</button>
+            </div>
+        </form>
     </div>
-
-    <!--사용자 정보 입력 폼-->
-    <form id = "profileForm">
-        <!--닉네임 부분 라벨과 속성-->
-        <!--닉네임 부분에 readonly 는 수정이 불가하도록 해주는 속성.-->
-        <label for = 'nickname'>닉네임</label>
-        <input type = 'text' id = 'nickname' name = 'nickname' readonly><br />
-
-        <!--경기 종목 선택 부분 속성-->
-        <label><input type="checkbox" name="event" value="soccer"> 축구</label>
-        <label><input type="checkbox" name="event" value="baseball"> 야구</label>
-        <label><input type="checkbox" name="event" value="basketball"> 농구</label>
-        <label><input type="checkbox" name="event" value="badminton"> 배드민턴</label>
-        <label><input type="checkbox" name="event" value="tennis"> 테니스</label>
-        <label><input type="checkbox" name="event" value="etc"> 기타</label>
-        <br/>
-
-        <!--경기 종목 경력 부분 속성-->
-        <label for='career'>종목 경력</label>
-        <select id='career' placeholder="초보~10년 이상"> 
-            <option value=''>선택</option>
-            <option value='처음'>처음</option>
-            <option value='1년 미만'>1년 미만</option>
-            <option value='1~2년'>1~2년</option>
-            <option value='2~3년'>2~3년</option>
-            <option value='3~5년'>3~5년</option>
-            <option value='5~10년'>5~10년</option>
-            <option value='10년 이상'>10년 이상</option>
-        </select><br/>
-        
-        <!--최소, 등록 버튼-->
-        <button onclick ='resetForm("profileForm") '>취소</button >
-        <button onclick ='submitForm(" profile Form ")'>등록</button>
-    </form>
 <script src="userInformation.js"></script>
 </body>
 </html>

@@ -1,24 +1,114 @@
-/*
-네비게이션. 즉, 나의 정보, 나의 프로필, 참여 통계로 이동할 수 있는 버튼 형식의 메뉴를 만들어주는 부분이다. 
-*/
-.nav a {
-    display: inline-block; /* 인라인 블록 요소로 설정 */
-    margin: 20px; /* 마진 설정 */
-    padding: 10px; /* 패딩 설정 */
-    text-decoration: none; /* 밑줄 제거 */
-    background-color: #022952; /* 배경색 설정 */
-    color: rgb(255, 255, 255); /* 글자색을 흰색으로 설정 */
-    width: 200px; 
-    height: 50px;
-    line-height :50px; 
-    text-align:center;
+/* 바디 중앙정렬, 폰트 설정 */
+body {
+    display: flex;
+    justify-content: center;
+    margin: 200px;
 }
 
-/*
-네비게이션의 위치를 지정해주는 부분. 
-*/
-.nav {
-   position:absolute;
-   top :200px;
-   left :10px;
+/* 전체 컨테이너 */
+.container {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 왼쪽 네비게이션 */
+.navigation {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  
+/* 네비게이션 버튼 스타일 */
+.nav-button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #162856;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* 나의 정보 이미지 스타일 */
+.my-info-image {
+    width: 150px;
+    height: 150px;
+    background-image: url(kilee.jfif);
+    background-size: cover;
+    background-position: center;
+    margin-left: 40px;
+}
+
+/* 오른쪽 사용자 정보 입력 폼 */
+#profileForm {
+    width: 100%;
+    height: 350px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* 사용자 정보 입력란 그룹박스 */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+
+/* 사용자 정보 라벨 박스 */
+.label-box {
+    border: 1px solid #162856;;
+    background-color: #162856;
+    color: white;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-bottom: 0 0 10px 0; /* 수정한 부분입니다 */
+    padding: 0;
+}
+
+/* 사용자정보 입력칸 박스 */
+input[type="text"],
+select {
+  width: 500px;
+  height: 45px;
+  margin: 0 0 16px 0;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+  width: 100px;
+  height: 45px;
+  margin: 0 0 16px 0;
+  padding: 0;
+  border: 1px solid #ccc;
+}
+
+/* 버튼 스타일 */
+.button-group {
+  margin: 10px 0 0 500px;
+
+}
+
+.cancel-button,
+.submit-button {
+  background-color: #162856;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  margin-right: 10px;
 }

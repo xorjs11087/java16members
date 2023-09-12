@@ -7,28 +7,15 @@
     <link rel="stylesheet" href="record.css">
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <a href="myInformation.html" onclick='showPage("myInformation")'>나의 정보</a></li><br/>
-            <a href="myProfile.html" onclick='showPage("myProfile")'>나의 프로필</a></li><br/>
-            <a href="record.html" onclick='showPage("record")'>참여 통계</a></li><br/>
-        </ul>
-    </div>
-
-    <form id = "record">
-        <!--사용자 정보 입력 폼의 라벨-->
-        <div class="label-group">
-            <label for="matchNumber">경기 횟수</label><br/>
-            <label for="result">결과</label><br/>
+    <div class="container">
+        <!--네비게이션바. 해당 주소를 클릭하면, 나의 정보, 프로필 편집, 참여 통계 주소로 이동-->
+        <div class="nav">
+            <div class="my-info-image"></div>
+            <ul>
+                <button class="nav-button" onclick='showPage("myInformation")'>나의 정보</button>
+                <button class="nav-button" onclick='showPage("myProfile")'>나의 프로필</button>
+                <button class="nav-button" onclick='showPage("record")'>참여 통계</button>
+            </ul>
         </div>
-
-        <!--사용자 정보 입력 폼의 입력란-->
-        <div class="input-group">
-            <!--이름 부분에 readonly 는 수정이 불가하도록 해주는 속성.-->
-            <input type="text" id="matchNumber" name="matchNumber" readonly><br/>
-            <input type="text" id="result" name="result" readonly><br/>
-        </div>
-        
-    </form>
 </body>
 </html>
