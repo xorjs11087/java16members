@@ -5,6 +5,15 @@ body {
   font-family: 'NanumGothic';
 }
 
+#main-logo {
+	width: 15%;
+	height: 15%;
+	object-fit: contain;
+	position: relative;
+	top: -110px;
+	left: 250px;
+}
+
 /* 전체 박스 가이드라인  */
 .container {
   width: 960px;
@@ -75,7 +84,8 @@ body {
 
 .label,
 .snsLabel,
-.title{
+.titleLabel,
+.bannerLabel{
 	list-style-type: none;
 	font-size: 1em;
 	font-weight: bold;
@@ -88,7 +98,8 @@ body {
 	border: solid 1px #E7E6E6;
  }
 
- .sns{
+ .sns,
+ .title{
 	width: 500px;
   height: 30px;
 	margin: 10px 0 10px 0;
