@@ -60,7 +60,6 @@ body {
 #profileForm {
     width: 100%;
     height: 350px;
-    background-color: #f0f0f0;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -88,22 +87,22 @@ body {
 
 .label-nickname {
     position: absolute;
-    left: 40%;
-    top: 25%;
+    left: 27%;
+    top: 6.5%;
     transform: translate(-50%, -50%);
 }
 
 .label-event {
     position: absolute;
-    left: 40%;
-    top: 35%;
+    left: 27%;
+    top: 18%;
     transform: translate(-50%, -50%);
 }
 
 .label-career {
     position: absolute;
-    left: 40%;
-    top: 44%;
+    left: 27%;
+    top: 28%;
     transform: translate(-50%, -50%);
 }
 

@@ -15,8 +15,8 @@ body {
     border: 1px solid#000;
     position:absolute;
     left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* 왼쪽 네비게이션 */
@@ -63,69 +63,38 @@ body {
    height:700px;
 }
 
-/*참여횟수 버튼*/
-.label-joincount{
-   
-   position:absolute;
-   top:16%;
-   
-   display: block;
-    width: 130px;
-    height: 55px;
+.label-box {
+    border: 1px solid #162856;;
     background-color: #162856;
     color: white;
-    border: none;
-    padding: 10px;
+    width: 150px;
+    height: 40px;
     display: flex;
     justify-content: center; /* 가로 중앙 정렬 */
     align-items: center; /* 세로 중앙 정렬 */
     margin-bottom: 0 0 10px 0; /* 수정한 부분입니다 */
     padding: 0;
-    cursor: pointer;
-    font-size: 1em;
-
-       
 }
 
-/*경기횟수 버튼*/
-.label-matchcount{
-   
-   
-   position:absolute;
-   top:49%;
-   
-   
-   display: block;
-    width: 130px;
-    height: 55px;
-    background-color: #162856;
-    color: white;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 1em;
-    margin-bottom:50px;
-    }
-    
-    /*경기결과 버튼*/
- .label-matchresult{
-   position:absolute;
-   top:79%;
-    
-    
-    
-   display: block;
-   width: 130px;
-    height: 55px;
-    background-color: #162856;
-    color: white;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 1em;
-    margin-bottom:50px;
+.label-joincount {
+    position: absolute;
+    left: 27%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.label-matchcount {
+    position: absolute;
+    left: 27%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.label-matchresult {
+    position: absolute;
+    left: 27%;
+    top: 85%;
+    transform: translate(-50%, -50%);
 }
 
 /*통계값 div 둘러싸고 있는 div*/
