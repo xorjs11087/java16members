@@ -25,13 +25,18 @@ body {
     width: 150px;
     height: 40px;
     background-color: #162856;
-    color: white;
+    color: rgb(45, 160, 30);
     border: none;
     padding: 10px;
     text-align: center;
     cursor: pointer;
     margin-bottom: 10px;
     font-size: 1em;
+}
+
+.nav-button a {
+    color: white;
+    text-decoration: none; /* 링크 밑줄 제거 */
 }
 
 /* 나의 정보 이미지 스타일 */

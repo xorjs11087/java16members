@@ -34,6 +34,11 @@ body {
   font-size: 1em;
 }
 
+.nav-button a {
+  color: white;
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
 /* 나의 정보 이미지 스타일 */
 .my-info-image {
   width: 150px;
