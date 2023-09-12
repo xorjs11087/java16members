@@ -11,6 +11,11 @@ body {
   margin: 200px;
 }
 
+#main-logo {
+	width: 45%;
+	height: 45%;
+}
+
 /* 회원가입 박스 가이드 라인 */
 #container {
   width: 830px;
