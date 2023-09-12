@@ -8,38 +8,38 @@
 </head>
 <!--body 부분에 userInformation.js 적용.-->
 <body onload="loadUserNickname()">
+    <header id="banner"></header>
     <div class="container">
         <!--네비게이션바. 해당 주소를 클릭하면, 나의 정보, 프로필 편집, 참여 통계 주소로 이동-->
         <div class="nav">
-            <div class="my-info-image"></div>
+			
+            <img src="kilee.jfif" class="img33">
             <ul>
                 <button class="nav-button"><a href="myInformation.html">나의 정보</a></button>
                 <button class="nav-button"><a href="myProfile.html">나의 프로필</a></button>
                 <button class="nav-button"><a href="record.html">참여 통계</a></button>
             </ul>
         </div>
-
         <!--사용자 정보 입력 폼-->
         <form id = "profileForm">
-
             <div class="form-group">
-
                 <div class="label-group">
                     <label class="label-box label-nickname" for="nickname">닉네임</label><br />
                     <label class="label-box label-event" for="event">주요 종목</label><br />
                     <label class="label-box label-career" for='career'>종목 경력</label><br />
                 </div>
-
                 <div class="input-group">
                     <!--이름 부분에 readonly 는 수정이 불가하도록 해주는 속성.-->
                     <input type="text" id="nickname" name="nickname" readonly><br />
                     <div class="checkbox-group">
-                        <label><input type="checkbox" name="event" value="soccer"> 축구</label>
-                        <label><input type="checkbox" name="event" value="baseball"> 야구</label>
-                        <label><input type="checkbox" name="event" value="basketball"> 농구</label>
-                        <label><input type="checkbox" name="event" value="badminton"> 배드민턴</label>
-                        <label><input type="checkbox" name="event" value="tennis"> 테니스</label>
-                        <label><input type="checkbox" name="event" value="etc"> 기타</label>
+						    <div class="divofcb123">  <!--축구~농구를둘러싸고있는보이지않는div-->
+                        <input type="checkbox" name="event" value="soccer"><span>축구</span>
+                        <input type="checkbox" name="event" value="baseball"><span>야구</span>
+                        <input type="checkbox" name="event" value="basketball"><span>농구</span>
+                             </div>
+                        <input type="checkbox" name="event" value="badminton" ><span>배드민턴</span>
+                        <input type="checkbox" name="event" value="tennis" ><span>테니스</span>
+                        <input type="checkbox" name="event" value="etc" ><span>기타</span>
                     </div>
                     <select id='career' placeholder="초보~10년 이상">
                         <option value=''>선택</option>
@@ -53,7 +53,6 @@
                     </select><br/>
                 </div>
             </div>
-
             <!--최소, 등록 버튼-->
             <div class="button-group">
                 <button class="cancel-button" onclick='resetForm("infoForm")'>취소</button>

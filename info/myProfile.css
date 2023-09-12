@@ -1,30 +1,41 @@
 @charset "UTF-8";
-
 /* 바디 중앙정렬, 폰트 설정 */
 body {
     justify-content: center;
     margin: 200px;
 }
+
+/* (수정) 상단 배너 추가 */
+#banner {
+  width: 70%;
+  height: 200px;
+  margin-bottom: 40px;
+  background-image: url(../01.\ main/head3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -180px;
+  left: 235px;
+}
+
 /* 전체 컨테이너 */
 .container {
   width: 1110px;
   height:700px;
-  margin: 0 auto;   
+  margin: 0 auto;
   display: flex;
-  border: 1px solid#000;
+  border: none;
   position:absolute;
   left: 50%;
- top: 50%;
- transform: translate(-50%, -50%);
+  top: 60%;  /* (수정) 위치 아래로 조금 내렸습니다 */
+  transform: translate(-50%, -50%);
 }
-
 /* 왼쪽 네비게이션 */
 .navigation {
     width: 30%;
     padding: 20px;
     box-sizing: border-box;
 }
-  
 /* 네비게이션 버튼 스타일 */
 .nav-button {
     display: block;
@@ -40,12 +51,10 @@ body {
     font-size: 1em;
     margin-bottom:40px;
 }
-
 .nav-button a {
     color: white;
     text-decoration: none; /* 링크 밑줄 제거 */
 }
-
 /* 나의 정보 이미지 스타일 */
 .my-info-image {
     width: 150px;
@@ -55,7 +64,6 @@ body {
     background-position: center;
     margin-left: 40px;
 }
-
 /* 오른쪽 사용자 정보 입력 폼 */
 #profileForm {
     width: 100%;
@@ -63,14 +71,12 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
-
 /* 사용자 정보 입력란 그룹박스 */
 .form-group {
     display: flex;
     justify-content: space-between;
     /* margin-bottom: 10px; */
 }
-
 /* 사용자 정보 라벨 박스 */
 .label-box {
     border: 1px solid #162856;;
@@ -83,29 +89,26 @@ body {
     align-items: center; /* 세로 중앙 정렬 */
     margin-bottom: 0 0 10px 0; /* 수정한 부분입니다 */
     padding: 0;
+    margin-left:110px;
 }
-
 .label-nickname {
     position: absolute;
     left: 27%;
     top: 25%;
     transform: translate(-50%, -50%);
 }
-
 .label-event {
     position: absolute;
     left: 27%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .label-career {
     position: absolute;
     left: 27%;
     top: 75%;
     transform: translate(-50%, -50%);
 }
-
 /* 사용자정보 입력칸 박스 */
 input[type="text"],
 select {
@@ -115,34 +118,36 @@ select {
   padding: 0;
   border: 1px solid #ccc;
 }
-
-input[type="checkbox"] {
+input[type="checkbox"] { /*체크박스들*/
   width: 100px;
-  height: 30px;
+  height: 25px;
   margin: 0 0 16px 0;
   padding: 0;
   border: 1px solid #000000;
 }
-
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked { /*체크박스가체크가되었을때색깔변경*/
     background-color:#162856; /* 배경색 설정 (체크된 상태) */
 }
-
 #nickname {
   position: absolute;
   top: 25%; /* 위에서부터의 거리 */
   left: 75%;
   transform: translate(-50%, -50%);
 }
-
-.checkbox-group {
+.checkbox-group {  /*체크박스를둘러싸고있는 div줄*/
   position: absolute;
   top: 50%; /* 위에서부터의 거리 */
-  left: 70%; /* 왼쪽에서부터의 거리 */
+  left: 75%; /* 왼쪽에서부터의 거리 */
   transform: translate(-50%, -50%);
+  border:1px solid #000;
+  width:500px;
+  height:150px;
 }
-
-
+.divofcb123{/*축구~농구를둘러싸고있는보이지않는div*/
+	margin-top: 28px;
+	margin-bottom:20px;
+	
+}
 #career {
   position: absolute;
   top: 75%; /* 위에서부터의 거리 */
@@ -152,10 +157,7 @@ input[type="checkbox"]:checked {
 /* 버튼 스타일 */
 .button-group {
   margin: 10px 0 0 500px;
-
 }
-
-
 .submit-button {
   background-color: #162856;
   color: white;
@@ -164,11 +166,10 @@ input[type="checkbox"]:checked {
   border-radius: 4px;
   cursor: pointer;
   position: absolute;
-  top: 95%; 
+  top: 95%;
   left: 90%;
   transform: translate(-50%, -50%);
 }
-
 .cancel-button {
   background-color: #162856;
   color: white;
@@ -177,11 +178,13 @@ input[type="checkbox"]:checked {
   border-radius: 4px;
   cursor: pointer;
   position: absolute;
-  top: 95%; 
+  top: 95%;
   left: 80%;
   transform: translate(-50%, -50%);
+    margin-right: 10px;
 }
-
-.cancel-button {
-  margin-right: 10px;
-}
+.img33{
+	margin:30px;
+	margin-left:40px;
+	height:300px;
+	width:150px;
