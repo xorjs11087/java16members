@@ -16,6 +16,18 @@
     </div>
 
     <form id = "record">
+        <!--사용자 정보 입력 폼의 라벨-->
+        <div class="label-group">
+            <label for="matchNumber">경기 횟수</label><br/>
+            <label for="result">결과</label><br/>
+        </div>
+
+        <!--사용자 정보 입력 폼의 입력란-->
+        <div class="input-group">
+            <!--이름 부분에 readonly 는 수정이 불가하도록 해주는 속성.-->
+            <input type="text" id="matchNumber" name="matchNumber" readonly><br/>
+            <input type="text" id="result" name="result" readonly><br/>
+        </div>
         
     </form>
 </body>
