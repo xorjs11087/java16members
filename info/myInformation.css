@@ -5,16 +5,29 @@ body {
   justify-content: center;
   margin: 200px;
 }
+
+/* (수정) 상단 배너 추가 */
+#banner {
+  width: 70%;
+  height: 200px;
+  margin-bottom: 40px;
+  background-image: url(../01.\ main/head3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -180px;
+  left: 235px;
+}
 /* 전체 컨테이너 */
 .container {
   width: 1110px;
   height:700px;
   margin: 0 auto;   
   display: flex;
-  border: 1px solid#000;
+  border: none;
   position:absolute;
   left: 50%;
- top: 50%;
+  top: 65%;  /* (수정) 위치 아래로 조금 내렸습니다 */
  transform: translate(-50%, -50%);
 }
 
