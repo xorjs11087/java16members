@@ -1,0 +1,308 @@
+header {
+  width: 1200px;
+}
+
+/* 마진 auto에서 450px로 조정  */
+body {
+  width: 1200px;
+  margin: 0 450px;
+}
+
+/* 상단 홈페이지 로고 */
+#main-logo {
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
+}
+/* 홈페이지 배너 사이즈 */
+#banner {
+  width: 1200px;
+  height: 240px;
+  margin-bottom: 40px;
+  background-image: url(head3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* 리스트선택, 버튼 나누기 */
+.choose,
+.button {
+  border: none;
+  margin: 0 50px 0 30px;
+}
+/* 네비게이션 바(지역선택, 글쓰기 등) 위치 및 크기*/
+.navi {
+  /* border: 1px solid black; */
+  height: 75px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 선택, 모집구분 스타일 */
+select {
+  border-radius: 4px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 1em;
+  font-weight: bold;
+}
+/* 버튼 스타일(모집중, 북마크) */
+#button1,
+#button2 {
+  border-radius: 4px;
+  width: 130px;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+  background: #162856;
+  font-size: 1em;
+  font-weight: bold;
+}
+/* 버튼 스타일(글쓰기) */
+#button3 {
+  border-radius: 4px;
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+  background: #162856;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+		/*배너등록*/
+	 #button4{
+		 border-radius: 4px;
+		  width:100px;
+		  height:40px;
+		  text-align: center;
+		  background-color: #162856;
+		  margin: 0 auto;
+          color: white;
+		  font-size: 1em;
+          font-weight: bold;
+	 }
+
+/* 테이블 가로정렬 */
+#tableSet{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 테이블 스타일 */
+table {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 10px 0 0;
+}
+
+/* 테이블 내 폰트 */
+tr{
+  height: 100%;
+  font-size: 1em;
+}
+
+
+/* 아래 테이블 섹션 */
+section {
+  float: left;
+  height: 990px;
+  width: 864px;
+  background: white;
+  font-family: '나눔 고딕';
+}
+
+/* 사이드 배너 여백 */
+aside {
+  font-size: 20px;
+  float: right;
+  height: 990px;
+  width: 336px;
+  background: white;
+  font-family: '나눔 고딕';
+}
+
+footer {
+  height: 135px;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: '나눔 고딕';
+  font-size: 20px;
+}
+
+/* 모집공고 검색 폰트 스타일 */
+p {
+  text-align: center;
+  font-size: 1em;
+}
+.login-wrapper {
+  width: 120px;
+  height: 168px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.loginJoin > h3 {
+  font-size: 20px;
+  color: #162856;
+  margin-bottom: 20px;
+}
+#login-form > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 13px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+#login-form > input::placeholder {
+  color: #d2d2d2;
+}
+#login-form > input[type='submit'] {
+  color: #fff;
+  font-size: 15px;
+  background-color: #162856;
+  margin-top: 20px;
+}
+#remember-check {
+  font-size: 7px;
+}
+#login-form > label {
+  color: #999999;
+}
+input[type='checkbox'] {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: text-top;
+  zoom: 0.3;
+}
+.banner-wrap1,
+.banner-wrap2,
+.banner-wrap3,
+.banner-wrap4 {
+  position: relative;
+}
+h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-family: '나눔 고딕';
+  overflow: hidden;
+}
+.search_wrapper {
+  width: 336px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#name {
+  width: 180px;
+  height: 20px;
+}
+#submit_button {
+  height: 30px;
+  width: 50px;
+  background-color: #162856;
+  color: white;
+  font-size: 15px;
+}
+.invisible {
+  display: none;
+}
+#suggestion_box {
+  margin-top: 1px;
+  background: white;
+  padding: 0 10px;
+  border: 1px solid black;
+}
+#suggested_items {
+  height: 200px;
+  width: 270px;
+  overflow: auto;
+  /* 스크롤바 추가 */
+}
+/* 마우스 올리면 색 변화 */
+.item:hover {
+  color: #fff;
+  background-color: lightgreen;
+}
+label {
+  margin-right: 120px;
+}
+#ids {
+  font-size: 10px;
+}
+a {
+  font-size: 12px;
+  text-align: right;
+  float: right;
+  transform: translate(0, 35%);
+}
+img {
+  width: 336px;
+  height: 400px;
+}
+#atop{
+		   height:250px; 
+		   width:336px; 
+		   border-radius: 20px; 
+		   border-color: black;
+		   border-style:groove;
+		   flex:1; 
+		   box-sizing: border-box;  
+           display:inline-block;  
+           align-content:center; 
+           list-style: none;
+           font-family: "나눔 고딕";
+	   }
+    #profile{
+		 height:112px;
+		 width:112px;
+		 float:left;
+		 border-radius: 50%;
+		 border-color: grey;
+		 text-align: left;
+		
+	 }
+	 #infobutton{
+		  width:250px;
+		  height:40px;
+		  text-align: center;
+		  background-color: #162856;
+          color: white;
+		  font-size: 10px;
+		  transform: translate(20%,0);
+	 }
+	  #logout{
+		  width:250px;
+		  height:40px;
+		  text-align: center;
+		  background-color: #162856;
+          color: white;
+		  font-size: 10px;
+		  transform: translate(20%, 0);
+	 }
+	
+	#idmention{
+		font-size: 12px;
+		margin: 0 auto;
+		transform: translate(-130%, 0%);
+	}
+	

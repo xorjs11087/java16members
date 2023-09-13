@@ -1,453 +1,282 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-
-<meta charset="UTF-8">
-<link href="slide.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-<title>Sportic:-지금 당장 시작해!</title>
-<style>
-	   body{
-		 
-		  width:1200px;
-		  margin: 0 auto;
-	   }
-	   
-	   
-	   header{ text-align: center ; height:210px; background:white; overflow:hidden;   font-family: 'Nanum Pen Script', cursive; font-size:90px; color: #162856;}
-	  nav{
-		  height:75px; background-color: white;  font-family:"나눔 고딕"; border-color:floralwhite; border-style:groove; border-radius: 5px;
-	  }
-	  section{float: left; height:990px; width: 864px; background: white;  font-family: "나눔 고딕"; }
-	   aside{font-size:20px; float:right; height:990px; width:336px; background:white; font-family: "나눔 고딕"; 
-       }
-	  
-
-	   footer{height:135px; width: 1200px; margin:0 auto;  text-align:center; font-family: "나눔 고딕";;  font-size:20px }
-	   table{
-		   height:168px; width:168px; border-radius: 20px; border-color:lightgrey; border-style:groove;
-		   flex:1; box-sizing: border-box;  
-           display:inline-block;  align-content:center; list-style: none;
-           font-family: "나눔 고딕";
-	   }
-	   #logo{
-		   align-content:center;
-		   
-	   }
-	   td{
-		   text-align: center;
-		   font-size: 15px;
-	   }
-	    select{
-		   width:180px;
-		   height:30px;
-		   border-radius: 20px;
-		   font-size: 12px;
-		   text-align: center;
-		   text-align-last: center;
-		   margin: 0 auto;
-		   margin-right: 20px;
-           transform: translate(5%,0);
-           font-family:"나눔 고딕";
-	   }
-	   p{
-		   text-align: center;
-		   font-size: 15px;
-		   
-	   }
-	 	.login-wrapper{
-    width: 120px;
-    height: 168px;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-.atop > h3{
-    font-size: 20px;
-    color: #162856;
-    margin-bottom: 20px;
-    
-}
-#login-form > input{
-    width: 100%;
-    height: 40px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    margin-bottom: 13px;
-    border-radius: 5px;
-    background-color: #F8F8F8;
-}
-#login-form > input::placeholder{
-    color: #D2D2D2;
-}
-#login-form > input[type="submit"]{
-    color: #fff;
-    font-size: 15px;
-    background-color: #162856;
-    margin-top: 20px;
-}
-#remember-check{
-	font-size:7px;
-}
-#login-form > label{
-    color: #999999;
-}
-input[type=checkbox] {
-   display:inline-block;
-   width:40px;height:40px;
-   vertical-align:text-top;
-   zoom: 0.3;
-   
-
-}
-
-.banner-wrap1, .banner-wrap2, .banner-wrap3, .banner-wrap4{
-	position: relative;
+	<meta charset="UTF-8">
+	<link href="slide.css" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	
-}
-h2{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50% );
-    color: white;
-    font-size: 12px;
-    font-family:"나눔 고딕";
-    overflow:hidden;
-}
-
-.search_wrapper {
-	width:336px;
-	height:180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#name {
-    width: 180px;
-    height: 20px;
-}  
-#submit_button{
-	height:30px;
-	width:50px;
-	background-color:  #162856;
-	color: white;
-	font-size: 15px;
-}
-.invisible{
-    display: none;
-}
-
-
-#suggestion_box {
-    margin-top: 1px;
-    background: white;
-    padding: 0 10px;
-    border: 1px solid black;
-}
-
-#suggested_items{
-    height:200px;
-    width: 270px;
-    overflow: auto; /* 스크롤바 추가 */
-}
-
-/* 마우스 올리면 색 변화 */
-.item:hover{
-    color: #fff;
-    background-color: lightgreen;
-}
-button{
-    width: 90px; height: 30px; 
-    margin: 0 auto;
-    color: white; background-color:  #162856;
-    font-size:4px;
-    font-family:"나눔 고딕";
-}
-label{
-	margin-right: 120px;
-}
-#ids{
-	font-size:10px;
-}
-a{
-	font-size:12px;
-	text-align: right;
-	float:right;
-	transform: translate(0, 35%);
-}
-img{
-	width:336px;
-	height:400px;
-}
-</style>
-
+	<title>Sportic:-지금 당장 시작해!</title>
+	<style>
+		/*배너등록*/
+	 #button4{
+		 border-radius: 4px;
+		  width:100px;
+		  height:40px;
+		  text-align: center;
+		  background-color: #162856;
+		  margin: 0 auto;
+          color: white;
+		  font-size: 1em;
+          font-weight: bold;
+	 }
+	</style>
 </head>
 
 <body>
-	  
+	<img id="main-logo" src="logo.png">
+	<header id="banner">
+	</header>
+	<nav class="navi">
+		<div class="choose">
+			<select id="location" name="location">
+				<option value="selectlocation">지역선택</option>"
+				<option value="seoul">서울</option>
+				<option value="gyeonggi">경기</option>
+				<option value="incheon">인천</option>
+				<option value="gangwon">강원</option>
+				<option value="chungcheong">충청</option>
+				<option value="gyeongbuk">경북</option>
+				<option value="gyeongnam">경남</option>
+				<option value="busan">부산</option>
+				<option value="daegu">대구</option>
+				<option value="jeonbuk">전북</option>
+				<option value="jeonnam">전남</option>
+				<option value="gwangju">광주</option>
+			</select>
+			<select id="sports" name="sports">
+				<option value="selectevent">종목선택</option>"
+				<option value="soccer">축구</option>
+				<option value="baseball">야구</option>
+				<option value="basketball">농구</option>
+				<option value="volleyball">배구</option>
+				<option value="others">기타</option>
+			</select>
+			<select id="select" name="select">
+				<option value="select">모집구분</option>"
+				<option value="team">팀모집</option>
+				<option value="member">팀원모집</option>
+				<option value="staff">스태프모집</option>
+				<option value="supervisor">감독모집</option>
+			</select>
+		</div>
+		<div class="button">
+			<button id="button1">모집중만 보기</button>
+			<button id="button2">내 북마크 보기</button>
+			<button id="button3"onclick="alert('로그인 후에 글을 쓰실 수 있습니다.')">글쓰기</button>
+			<button id="button4" onclick="alert('로그인 후에 배너를 등록하실 수 있습니다.')">배너등록</button>
+		</div>
+	</nav>
+	<section>
+
+		<div id="tableSet">
+			<!-- 1열 5개 -->
+			<table onclick="location.href='Page14_Screen.html'">
+				<tr>
+					<td><b>#축구 #서울</b><br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+
+			<table onclick="location.href='page14_Screen.html'">
+				<tr>
+					<td>#축구 #서울<br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+
+			<table onclick="location.href='Page14_Screen.html'">
+				<tr>
+					<td>#축구 #서울<br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+
+			<table onclick="location.href='Page14_Screen.html'">
+				<tr>
+					<td>#축구 #서울<br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+
+			<!-- 2열 5개 -->
+			<table onclick="location.href='page14_Screen.html'">
+				<tr>
+					<td>#축구 #서울<br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+
+			<table onclick="location.href='Page14_Screen.html'">
+				<tr>
+					<td>#축구 #서울<br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+
+			<table onclick="location.href='Page14_Screen.html'">
+				<tr>
+					<td>#축구 #서울<br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+
+			<table onclick="location.href='Page14_Screen.html'">
+				<tr>
+					<td>#축구 #서울<br />
+						일자 | 2023.12.31<br />
+						노원FC 팀원 모집 중!<br />
+						#팀원모집
+						<hr> ⚽홍길동
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
 
 
+	<!-- 사이드 로그인, 검색, 배너창 -->
+	<aside>
+		<div class="loginJoin">
+			<h3><b>Login</b></h3>
+			<form method="post" action="login.html" id="login-form">
+				<input type="text" name="userName" placeholder="Email">
+				<input type="password" name="userPassword" placeholder="Password">
+				<label for="remember-check" id="ids"><input type="checkbox" id="remember-check">아이디 저장하기</label>
+				<a href="#" onclick="location.href='join.html'">회원가입</a>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+		<div class="search_wrapper">
+			<div class="mid_wrapper">
+				<!-- 검색창 -->
+				<input type="text" id="name" autocomplete="off">
+				<!-- 검색버튼 -->
+				<input type="button" id="submit_button" value="검색">
+			</div>
+			<!-- 추천창 -->
+			<div id="suggestion_box" class="invisible">
+				<div id=suggested_items></div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="poster">
+				<div class="images">
+					<div class="banner-wrap1">
+						<img src="1.png" / class="image1" onclick="location.href='Page15_Screen.html'">
+						<h2 class="">강원시장배 여자풋살대회<br />
+							일시: 2025년 3월 26일<br />
+							장소: 춘천 플레이그라운드 실내 풋살장
+						</h2>
+					</div>
+					<div class="banner-wrap2">
+						<img src="2.png" / class="image2" onclick="location.href='Page15_Screen.html'">
+						<h2 class="">서울시 사회체육인 농구대회<br />
+							일시: 2024년 7월 13일<br />
+							장소: 서울특별시 동대문구 장안동 415-10 글로벌펠리스 2층(어반바스켓볼)
+						</h2>
+					</div>
 
-				  
-             <header>	 
-				함께 즐기는 스포츠, Sportic:
-		  </header>
-	        <nav>
-				 
-				<select name="location" id="location">
-				 <option value="selectlocation">지역선택</option>"
-                <option value="seoul">서울</option>
-                <option value="gyeonggi">경기</option>
-                <option value="incheon">인천</option>
-                <option value="gangwon">강원</option>
-                <option value="chungcheong">충청</option>
-                <option value="gyeongbuk">경북</option>
-                <option value="gyeongnam">경남</option>
-                <option value="busan">부산</option>
-                <option value="daegu">대구</option>
-                <option value="jeonbuk">전북</option>
-                <option value="jeonnam">전남</option>
-                <option value="gwangju">광주</option>
-                </select>
-                <select name="sports" id="sports">
-				 <option value="selectevent">종목선택</option>"
-                <option value="soccer">축구</option>
-                <option value="baseball">야구</option>
-                <option value="basketball">농구</option>
-                <option value="volleyball">배구</option>
-                 <option value="others">기타</option>
-                </select>
-                <select name="select" id="select">
-				 <option value="select">모집구분</option>"
-                <option value="team">팀모집</option>
-                <option value="member">팀원모집</option>
-                <option value="staff">스태프모집</option>
-                <option value="supervisor">감독모집</option>
-                </select>
-                  <button id="button1">모집중만 보기</button>
-			      <button id="button2">내 북마크 보기</button>
-			       <button id="button3">글쓰기</button>
-				 </nav>
-				
-	      <section>
-			  <div>
-			    <table>
-				
-					   <tr>
-						   <td>[풋살 팀원 모집합니다!!]<br/>
-						           지역:경기<br/>
-						           실력없어도 괜찮습니다! 즐기면서 열정적으로!</td>
-					   </tr>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table> 
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				
-				</table>
-				 <table>
-					
-				</table>
-				 <table>
-					
-				</table>
-				
-				 <table>
-			   </table>
-			   
-				 <table>
-					
-				</table>
-				
-				 <table>
-					
-				</table>
-				
-				 <table>
-				</table>
-				
-				 <table>
-				</table>
-				
-				 <table>
-				</table>
-				
-				 <table>
-				</table>
-				  </div>
-		  </section>
-		  
-	      <aside >
-			      <div class="atop">
-					
-                   <h3>Login</h3>
-                   <form method="post" action="login.html" id="login-form">
-                  <input type="text" name="userName" placeholder="Email">
-                  <input type="password" name="userPassword" placeholder="Password">                
-                   <label for="remember-check" id="ids"><input type="checkbox" id="remember-check" >아이디 저장하기</label>
-                   <a href="#" onclick="location.href='join_v1.html'">회원가입</a>
-                
-                  <input type="submit" value="Login" >
-                  </form>
-                  
-				  </div>
-				   <div class = "search_wrapper">
-                   <div class = "mid_wrapper">
-      	           <!-- 검색창 -->
-      	           <p>모집공고 검색</p>
-                   <input type="text" id = "name" autocomplete="off">
-                   <!-- 검색버튼 -->
-                  <input type="button" id = "submit_button" value="검색"> 
-                  </div>
-                  <!-- 추천창 -->
-                  <div id="suggestion_box" class = "invisible">
-                  <div id = suggested_items></div>
-                 </div>
-              </div>
-				   <div id="container">
-				 <div class="poster">
-				 <div class="images">
-				  <div class="banner-wrap1">
-					   <img src="../image/1.png"/ class="image1">
-						 <h2 class="">강원시장배 여자풋살대회<br/>
-							       일시: 2025년 3월 26일<br/>
-							       장소: 춘천 플레이그라운드 실내 풋살장
-						 </h2>
-				   </div>
-				    <div class="banner-wrap2">
-					   <img src="../image/2.png"/ class="image2">
-						 <h2 class="">서울시 사회체육인 농구대회<br/>
-							       일시: 2024년 7월 13일<br/>
-							       장소: 서울특별시 동대문구 장안동 415-10 글로벌펠리스 2층(어반바스켓볼)
-						 </h2>
-				   </div>
-				    <div class="banner-wrap3">
-					   <img src="../image/3.png"/ class="image3">
-						 <h2 class="">전국 사회인 야구대회<br/>
-							       일시: 2027년 9월 8일<br/>
-							       장소: 서울종합운동장 야구장
-						 </h2>
-				   </div>
-				    <div class="banner-wrap4">
-					   <img src="../image/4.png"/ class="image4">
-						 <h2 class="">부산 사회인 발리볼 대회<br/>
-							       일시: 2025년 1월 26일<br/>
-							       장소: 부산 사직 실내 체육관
-						 </h2>
-				   </div>
-				   
-				   </div>
-				   </div>
-				   <button class="prev">Prev</button>
-				   <button class="next">Next</button>
-				   </div>
-				   
-				   
-			  </aside>
-   
-   <footer>Contact
-team.sportic.official@gmail.com
-Copyright sportic. All rights reserved</footer>
-  
-<script>
-	
-let curPos= 0; // 현재 보고 있는 이미지의 인덱스 번호!
-let position = 0; // 현재 .images 의 위치값!
-const IMAGE_WIDTH = 336; // 한번 움직일 때 이동해야 할 거리!
-
-// 요소 선택
-const prevBtn = document.querySelector(".prev")
-const nextBtn = document.querySelector(".next")
-const images = document.querySelector(".images")
-
-function prev(){
-    if(curPos > 0){
-    nextBtn.removeAttribute("disabled") /* disabled 속성 제거*/
-    position += IMAGE_WIDTH /* position 값 증가 */
-    
-    images.style.transform = `translateX(${position}px)` /* images 스타일 transform, x축 변경*/
-    curPos -= 1; /* curPos 값 감소*/
-    }
-    if(curPos == 0){ /* 이미지 index값 0 되면 prev 못하게 */
-        prevBtn.setAttribute("disabled", 'true')
-    }
- }
-function next(){ 
-    if(curPos < 3){
-        prevBtn.removeAttribute("disabled")
-        position -= IMAGE_WIDTH
-        /*
-            트랜스폼(변형)의 네가지 속성값(함수)
-            - scale() : 확대 또는 축소
-            - translate() : 위치 이동
-            - rotate() : 회전시키기
-            - skew() : 요소 비틀기
-        */
-        images.style.transform = `translateX(${position}px)`
-        curPos += 1;  
-    }
-    if(curPos == 3){
-        // 뒤로 못 가게 하기
-        nextBtn.setAttribute("disabled", 'true') // 못 누르는 버튼이 됨
-    }
-}
-// 초기 랜더링 시 최초 호출 함수의 관습적 이름
-function init(){
-    // 앞으로 가기는 처음부터 못누르게!
-    prevBtn.setAttribute("disabled", 'true')
-    prevBtn.addEventListener("click", prev)
-    nextBtn.addEventListener("click", next)
-  }
-    init();
-    
-    
-</script>
+					<div class="banner-wrap3">
+						<img src="3.png" / class="image3" onclick="location.href='Page15_Screen.html'">
+						<h2 class="">전국 사회인 야구대회<br />
+							일시: 2027년 9월 8일<br />
+							장소: 서울종합운동장 야구장
+						</h2>
+					</div>
+					<div class="banner-wrap4">
+						<img src="4.png" / class="image4" onclick="location.href='Page15_Screen.html'">
+						<h2 class="">부산 사회인 발리볼 대회<br />
+							일시: 2025년 1월 26일<br />
+							장소: 부산 사직 실내 체육관
+						</h2>
+					</div>
+				</div>
+			</div>
+			<button class="prev">Prev</button>
+			<button class="next">Next</button>
+		</div>
+	</aside>
+	<footer>Contact
+		team.sportic.official@gmail.com
+		Copyright sportic. All rights reserved</footer>
+	<script>
+		let curPos = 0; // 현재 보고 있는 이미지의 인덱스 번호!
+		let position = 0; // 현재 .images 의 위치값!
+		const IMAGE_WIDTH = 336; // 한번 움직일 때 이동해야 할 거리!
+		// 요소 선택
+		const prevBtn = document.querySelector(".prev")
+		const nextBtn = document.querySelector(".next")
+		const images = document.querySelector(".images")
+		function prev() {
+			if (curPos > 0) {
+				nextBtn.removeAttribute("disabled") /* disabled 속성 제거*/
+				position += IMAGE_WIDTH /* position 값 증가 */
+				images.style.transform = `translateX(${position}px)` /* images 스타일 transform, x축 변경*/
+				curPos -= 1; /* curPos 값 감소*/
+			}
+			if (curPos == 0) { /* 이미지 index값 0 되면 prev 못하게 */
+				prevBtn.setAttribute("disabled", 'true')
+			}
+		}
+		function next() {
+			if (curPos < 3) {
+				prevBtn.removeAttribute("disabled")
+				position -= IMAGE_WIDTH
+				/*
+				트랜스폼(변형)의 네가지 속성값(함수)
+				- scale() : 확대 또는 축소
+				- translate() : 위치 이동
+				- rotate() : 회전시키기
+				- skew() : 요소 비틀기
+				*/
+				images.style.transform = `translateX(${position}px)`
+				curPos += 1;
+			}
+			if (curPos == 3) {
+				// 뒤로 못 가게 하기
+				nextBtn.setAttribute("disabled", 'true') // 못 누르는 버튼이 됨
+			}
+		}
+		// 초기 랜더링 시 최초 호출 함수의 관습적 이름
+		function init() {
+			// 앞으로 가기는 처음부터 못누르게!
+			prevBtn.setAttribute("disabled", 'true')
+			prevBtn.addEventListener("click", prev)
+			nextBtn.addEventListener("click", next)
+		}
+		init();
+	</script>
 </body>
+
 </html>
