@@ -1,9 +1,11 @@
+@charset "UTF-8";
+
 /* 바디 중앙정렬, 폰트 설정 */
 body {
-  display: flex;
-  justify-content: center;
-  margin: 100px;
-  font-family: 'NanumGothic';
+	display: flex;
+	justify-content: center;
+	margin: 100px;
+	font-family: 'NanumGothic';
 }
 
 #main-logo {
@@ -17,159 +19,151 @@ body {
 
 /* 전체 박스 가이드라인  */
 .container {
-  width: 960px;
-  height: 1000px;
-  border: solid 1px white;
+	width: 960px;
+	height: 1000px;
+	border: solid 1px white;
 }
 
 /* 기본정보 입력 박스(상단) */
 .box_up {
-  border: solid 1px white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-
+	border: solid 1px white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 /* 기본정보 라벨 */
-.label,
-.snsLabel {
-  margin: 0 0 0 80px;
-  font-size: 1em;
+.label, .snsLabel {
+	margin: 0 0 0 80px;
+	font-size: 1em;
 }
 
 /* 기본정보 입력칸 */
-#area,
-#play,
-#division,
-#number,
-#etc1,
-#date {
-  color: black;
-  width: 300px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0 10px 80px;
+#area, #play, #division, #number, #career, #date {
+	color: black;
+	width: 300px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0 10px 80px;
 }
 
 /* sns 입력칸 */
 #addr {
-  color: black;
-  width: 680px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0 10px 80px;
+	color: black;
+	width: 680px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0 10px 80px;
 }
 
 /* 입력칸 플레이스 홀더 들여쓰기  */
 ::placeholder {
-  text-indent: 3px;
+	text-indent: 3px;
 }
 
-#intro,
-#intro2 {
-  margin: 10px 0 20px 100px;
-  position: relative;
-  /* 추가: 상위 요소의 위치를 기준으로 설정합니다. */
+#intro, #intro2 {
+	margin: 10px 0 20px 100px;
+	position: relative;
+	/* 추가: 상위 요소의 위치를 기준으로 설정합니다. */
 }
 
 /* 원문자① */
 #intro::before {
-  content: "1";
-  /* 원문자를 콘텐츠로 설정 */
-  display: inline-block;
-  width: 30px;
-  /* 원의 너비 조절 */
-  height: 30px;
-  /* 원의 높이 조절 */
-  border-radius: 50%;
-  /* 원 모양으로 만듭니다. */
-  background-color: #162856;
-  /* 배경 색상 설정 */
-  color: white;
-  /* 텍스트 색상을 흰색으로 설정합니다. */
-  text-align: center;
-  line-height: 30px;
-  /* 텍스트를 원의 가운데에 정렬합니다. */
-  position: absolute;
-  left: -40px;
-  /* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
-  top: -2px;
+	content: "1";
+	/* 원문자를 콘텐츠로 설정 */
+	display: inline-block;
+	width: 30px;
+	/* 원의 너비 조절 */
+	height: 30px;
+	/* 원의 높이 조절 */
+	border-radius: 50%;
+	/* 원 모양으로 만듭니다. */
+	background-color: #162856;
+	/* 배경 색상 설정 */
+	color: white;
+	/* 텍스트 색상을 흰색으로 설정합니다. */
+	text-align: center;
+	line-height: 30px;
+	/* 텍스트를 원의 가운데에 정렬합니다. */
+	position: absolute;
+	left: -40px;
+	/* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
+	top: -2px;
 }
 
 /* 원문자② */
 #intro2::before {
-  content: "2";
-  /* 원문자를 콘텐츠로 설정 */
-  display: inline-block;
-  width: 30px;
-  /* 원의 너비 조절 */
-  height: 30px;
-  /* 원의 높이 조절 */
-  border-radius: 50%;
-  /* 원 모양으로 만듭니다. */
-  background-color: #162856;
-  /* 배경 색상 설정 */
-  color: white;
-  /* 텍스트 색상을 흰색으로 설정합니다. */
-  text-align: center;
-  line-height: 30px;
-  /* 텍스트를 원의 가운데에 정렬합니다. */
-  position: absolute;
-  left: -40px;
-  /* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
-  top: -2;
+	content: "2";
+	/* 원문자를 콘텐츠로 설정 */
+	display: inline-block;
+	width: 30px;
+	/* 원의 너비 조절 */
+	height: 30px;
+	/* 원의 높이 조절 */
+	border-radius: 50%;
+	/* 원 모양으로 만듭니다. */
+	background-color: #162856;
+	/* 배경 색상 설정 */
+	color: white;
+	/* 텍스트 색상을 흰색으로 설정합니다. */
+	text-align: center;
+	line-height: 30px;
+	/* 텍스트를 원의 가운데에 정렬합니다. */
+	position: absolute;
+	left: -40px;
+	/* 원의 위치를 조절하여 텍스트와 일치시킵니다. */
+	top: -2;
 }
 
 /* 제목 입력칸 */
 #a1 {
-  width: 690px;
-  height: 20px;
-  padding: 10px;
-  margin: 5px 0 0 80px;
+	width: 690px;
+	height: 20px;
+	padding: 10px;
+	margin: 5px 0 0 80px;
 }
 
 /* 글쓰기 입력칸 */
 #a2 {
-  width: 690px;
-  height: 320px;
-  background-color: white;
-  border: 1px solid #000;
-  padding: 10px;
-  margin: 10px 0 0 80px;
+	width: 690px;
+	height: 320px;
+	background-color: white;
+	border: 1px solid #000;
+	padding: 10px;
+	margin: 10px 0 0 80px;
 }
 
 /* 등록 버튼 스타일 */
 #register {
-  border: none;
-  background: #162856;
-  color: white;
-  width: 100px;
-  height: 40px;
-  margin: 0 0 0 60px;
-  font-size: 1em;
-  font-weight: bold;
+	border: none;
+	background: #162856;
+	color: white;
+	width: 100px;
+	height: 40px;
+	margin: 0 0 0 60px;
+	font-size: 1em;
+	font-weight: bold;
 }
 
 /* 취소 버튼 스타일 */
 #cancel {
-  border: none;
-  background: #E7E6E6;
-  color: black;
-  width: 100px;
-  height: 40px;
-  margin: 0 0 0 60px;
-  font-size: 1em;
+	border: none;
+	background: #E7E6E6;
+	color: black;
+	width: 100px;
+	height: 40px;
+	margin: 0 0 0 60px;
+	font-size: 1em;
 }
 
 /* 취소, 등록 정렬 */
 .cancelRegister {
-  display: flex;
-  justify-content: center;
-  width: 830px;
-  margin: 50px 0 0 0px;
+	display: flex;
+	justify-content: center;
+	width: 830px;
+	margin: 50px 0 0 0px;
 }
